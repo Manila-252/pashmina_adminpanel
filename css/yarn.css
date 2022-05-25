@@ -1,0 +1,163 @@
+/*yarn details topbar */
+.sc_yarn_nav {
+  overflow: hidden;
+  background-color: #f1f1f1;
+
+}
+
+.sc_yarn_topbar {
+  position: sticky;
+  margin-top: 20px;
+  width: 80%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.sc_yarn_topbar a {
+  text-align: center;
+  padding: 10px 50px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.sc_yarn_topbar a.sc_yarn_active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sc_yarn_topbar a:hover:not(.sc_yarn_active) {
+  background-color: #555;
+  color: white;
+}
+
+/* yarn details container */
+
+.sc_yarn_supply {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+table, td, th {
+  border: 2px solid #2a435b;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background-color: #2a435b;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  padding: 5px;
+}
+
+.sc_yarn_editbtn {
+    width: 80px;
+    height: 30px;
+    background-color: #2a435b;
+    cursor: pointer;
+    padding: 5px;
+    color: #ffffff;
+    border: 2px solid #2a435b;
+    border-radius: 15px;
+}
+
+.sc_yarn_editbtn:hover {
+  background-color: white;
+  border: 2px solid #2a435b;
+  color: #2a435b;
+}
+
+.sc_yarn_deletebtn {
+  width: 80px;
+  height: 30px;
+  background-color: red;
+  cursor: pointer;
+  padding: 5px 5px 5px 10px;
+  border-radius: 40px;
+  color: #ffffff;
+  border: 2px solid red;
+  border-radius: 15px;
+}
+
+.sc_yarn_deletebtn:hover {
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+}
+
+
+.sc_yarn_printbtn {
+  margin-top: 20px;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sc_yarn_printbtn button {
+  height: 40px;
+  width: 120px;
+  border: 2px solid #28a745;
+  background-color: #28a745;
+  color: #ffffff;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.sc_yarn_printbtn:hover button {
+  background-color: white;
+  color: #28a745;
+}
+
+/* *********************************************************************************************************************** */
+
+/* yarn supply received session */
+.sc_yarn_received_input {
+  margin-top: 20px;
+}
+
+.sc_yarn_form {
+  align-items: center;
+}
+
+.sc_yarn_form label{
+  font-weight: bolder;
+}
+
+.sc_yarn_form input, select {
+  vertical-align: middle;
+  margin: 0px 40px 0px 15px;
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid #2a435b;
+  width: 20%;
+  border-radius: 5px;
+}
+
+.sc_yarn_form button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  border: 2px solid #28a745;
+  color: white;
+  cursor: pointer;
+  border-radius: 15px;
+  float: right;
+}
+
+.sc_yarn_form button:hover {
+  background-color: white;
+  color: #28a745;
+}

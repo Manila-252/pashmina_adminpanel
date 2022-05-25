@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+      href="css/fontawesome-free-6.0.0-beta3-web/css/all.css">
+    <link rel="stylesheet" href="css/main_copy.css">
+    <link rel="stylesheet" href="css/barcodescan.css">
+    <title>Dashboard: Barcode Scan</title>
+  </head>
+
+  <body>
+    <!-- navigation bar start -->
+    <div class="sc_navbar">
+      <div class="sc_header">
+        <div class="sc_header_right">
+          <a href="#home" class="admin_hello">Hello Admin</a>
+          <a href="#" class="logout_btn">Logout</a>
+        </div>
+      </div>
+    </div>
+    <!-- navigation bar End -->
+
+    <!-- side bar start -->
+    <div class="sc_sidebar_list">
+      <div class="sc_sidebar">
+        <a href="wage_page.html"><i class="fas fa-rupee-sign"></i>Wages</a>
+        <a class="active" href="barcode scan.html"><i class="fas fa-barcode"></i>Barcode
+          Scan</a>
+        <a href="add_order.html"><i class="fas fa-plus-circle"></i>Add Order
+          Number</a>
+        <a href="yarn_supply.html"><i class="fas fa-mitten"></i>Yarn Supply</a>
+        <a href="staff_details.html"><i class="fas fa-users"></i>Staff Details</a>
+      </div>
+    </div>
+
+    <!-- side bar End -->
+
+
+    <div class="sc_content_container">
+      <!-- main container start -->
+      <div class="sc_maincontainer">
+        <!-- container 1 start -->
+        <div class="sc_container1">
+          <div class="sc_row">
+            <div class="sc_column1">
+              <button class="sc_bc_topbtn" onclick="openForm()">UPLOAD PDF</button>
+            </div>
+            <div class="sc_column2">
+              <button class="sc_bc_topbtn" onclick="openForm1()">
+                MANUAL ENTER
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- container 1 end -->
+        <!-- dropdown view items start -->
+        <div class="sc_viewitems">
+          <label for="view">VIEW:</label>
+          <select name="view" id="view" class="sc__vi_dropdown">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+          </select>
+        </div>
+        <!-- dropdown end -->
+        <!-- container 2 start -->
+        <div class="sc_container2">
+          <div class="sc_row">
+            <div class="sc_column1">
+              <table>
+                <tr>
+                  <th>S.N.</th>
+                  <th>Code</th>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Griffin</td>
+                  <td>$100</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Griffin</td>
+                  <td>$150</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Swanson</td>
+                  <td>$300</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Brown</td>
+                  <td>$250</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Brown</td>
+                  <td>$250</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Brown</td>
+                  <td>$250</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Brown</td>
+                  <td>$250</td>
+                  <td>$100</td>
+                </tr>
+              </table>
+            </div>
+            <div class="sc_column2">
+              <table>
+                <tr>
+                  <th>S.N.</th>
+                  <th>Code</th>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Griffin</td>
+                  <td>$100</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Griffin</td>
+                  <td>$150</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Swanson</td>
+                  <td>$300</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Brown</td>
+                  <td>$250</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Brown</td>
+                  <td>$250</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Brown</td>
+                  <td>$250</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Brown</td>
+                  <td>$250</td>
+                  <td>$100</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <!-- container 3 start -->
+          <div class="sc_container3">
+            <div class="sc_c3_row1">
+              <div class="sc_c3_column1">
+                <a href=""><button class="sc_bc_topbtn">PREV</button></a>
+              </div>
+              <div class="sc_c3_column2">
+                <div class="sc_pagination1">
+                  <div class="sc_pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                  </div>
+                </div>
+              </div>
+              <div class="sc_c3_column3">
+                <a href=""><button class="sc_bc_topbtn">NEXT</button></a>
+              </div>
+            </div>
+          </div>
+          <!-- container 3 end -->
+        </div>
+        <!-- conainer 2 end -->
+        <div class="sc_container4">
+          <a href=""><button class="sc_bc_topbtn">CONFIRM</button></a>
+        </div>
+      </div>
+      <!-- main container end -->
+
+
+      <!-- manual popup start -->
+      <!-- ................................................................................................ -->
+      <div class="sc_form-popup" id="sc_myForm">
+        <div class="sc_form_container">
+          <div class="sc_right_close sc_close_btn">
+            <i class="fas fa-times" onclick="closeForm1()"></i>
+          </div>
+          <div class="sc_popUp_content">
+            <div class="sc_form_left_col">
+              <div class="sc_form_top">
+                <input class="sc_entercode" type="text" placeholder="ENTER CODE"
+                  />
+                <div class="sc_left_arrow">
+                  <img src="Images/left_arrow_black.png" alt=""
+                    class="sc_left_arrowbtn" />
+                </div>
+              </div>
+              <h2><span>OR</span></h2>
+
+              <div class="sc_left_bottom">
+                <div class="sc_left_row">
+                  <div class="sc_left_col-25">
+                    <label for="type"> <b>Type</b></label>
+                  </div>
+                  <div class="sc_left_col-75">
+                    <select id="type" name="type">
+                      <option value="a">Type1</option>
+                      <option value="b">Type2</option>
+                      <option value="c">Type3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="sc_left_row">
+                  <div class="sc_left_col-25">
+                    <label for="type"><b>Size</b></label>
+                  </div>
+                  <div class="sc_left_col-75">
+                    <select id="size" name="size">
+                      <option value="a">size1</option>
+                      <option value="b">size2</option>
+                      <option value="c">size3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="sc_left_row">
+                  <div class="sc_left_col-25">
+                    <label for="color"><b>Color</b></label>
+                  </div>
+                  <div class="sc_left_col-75">
+                    <select id="color" name="color">
+                      <option value="a">color1</option>
+                      <option value="b">color2</option>
+                      <option value="c">color3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="sc_left_row">
+                  <div class="sc_left_col-25">
+                    <label for="leftqty"><b>Quantity</b></label>
+                  </div>
+                  <div class="sc_left_col-75">
+                    <input type="number" id="leftqty" name="qty" placeholder="Enter quantity..">
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="sc_left_odbtn">
+                <button class="sc_bc_topbtn">ORDER</button>
+              </div>
+            </div>
+
+            <div class="sc_vertical_line"></div>
+
+            <!-- right table start -->
+            <div class="sc_form_right_col">
+
+              <div class="sc_right_table">
+                <table>
+                  <tr>
+                    <th>S.N.</th>
+                    <th>Code</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Griffin</td>
+                    <td>$100</td>
+                    <td>$100</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Griffin</td>
+                    <td>$150</td>
+                    <td>$100</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Swanson</td>
+                    <td>$300</td>
+                    <td>$100</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Brown</td>
+                    <td>$250</td>
+                    <td>$100</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Brown</td>
+                    <td>$250</td>
+                    <td>$100</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Brown</td>
+                    <td>$250</td>
+                    <td>$100</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Brown</td>
+                    <td>$250</td>
+                    <td>$100</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="sc_right_bottom">
+                <div class="sc_pagination1">
+                  <div class="sc_pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">&raquo;</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div><button class="sc_right_confbtn">CONFIRM</button></div>
+        </div>
+
+        <!-- right table end -->
+      </div>
+      <!-- manual popup end -->
+
+      <!-- upload pdf popup start -->
+      <!-- ............................................................................................... -->
+      <div class="sc_form-popup" id="sc_myForm1">
+        <div class="sc_form-container1">
+          <div class="sc_right_close sc_close_btn">
+            <i class="fas fa-times" onclick="closeForm()"></i>
+          </div>
+          <br>
+          <div class="sc_upload_btn_div">
+            <button class="sc_bc_topbtn">SELECT PDF</button>
+          </div>
+
+          <div class="sc_upload_pdf">
+            <table width="100%">
+              <tr>
+                <th>S.N.</th>
+                <th>FILE NAME</th>
+              </tr>
+              <tr>
+                <td width="5%">1</td>
+                <td width="95%">Griffin</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Griffin</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Swanson</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Brown</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Brown</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Brown</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Brown</td>
+              </tr>
+            </table>
+          </div>
+          <div class="sc_uplconfirim_btn">
+            <button class="sc_upload_confbtn">CONFIRM</button>
+          </div>
+        </div>
+      </div>
+      <!-- upload pdf popup end -->
+    </div>
+    <script>
+    function openForm1() {
+      document.getElementById("sc_myForm").style.display = "block";
+    }
+
+    function closeForm1() {
+      document.getElementById("sc_myForm").style.display = "none";
+    }
+    function openForm() {
+      document.getElementById("sc_myForm1").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("sc_myForm1").style.display = "none";
+    }
+
+  </script>
+  </body>
+
+</html>

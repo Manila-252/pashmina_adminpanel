@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="css/fontawesome-free-6.0.0-beta3-web/css/all.css">
+        <link rel="stylesheet" href="css/main_copy.css">
+        <link rel="stylesheet" href="css/staff_detail.css">
+        <title>Dashboard: Staff Details</title>
+    </head>
+
+    <body>
+        <!-- navigation bar start -->
+  <div class="sc_navbar">
+    <div class="sc_header">
+        <div class="sc_header_right">
+            <a href="#home" class="admin_hello">Hello Admin</a>
+            <a href="#" class="logout_btn"><i class="fa-solid fa-power-off"></i></a>
+        </div>
+    </div>
+</div>
+<!-- navigation bar End -->
+
+  <!-- side bar start -->
+  <div class="sc_sidebar_list">
+    <div class="sc_sidebar">
+        <a href="wage_page.html"><i class="fas fa-rupee-sign"></i>Wages</a>
+        <!-- <a href="barcode scan.html"><i class="fas fa-barcode"></i>Barcode Scan</a> -->
+        <a href="add_order/upload_order.php"><i class="fas fa-plus-circle"></i>Order Status</a>
+        <a href="system/in_systemA.php"><i class="fa-solid fa-network-wired"></i>System</a>
+        <a href="storage/cloth_storage.php"><i class="fa-solid fa-box-open"></i>Storage</a>
+        <a href="yarn_supply.html"><i class="fas fa-mitten"></i>Yarn Supply</a>
+        <a class="active" href="staff_details.html"><i class="fas fa-users"></i>Staff Details</a>
+    </div>
+</div>
+
+<!-- side bar End -->
+
+        <!-- side bar End -->
+
+        <!-- staff details topbar start -->
+
+        <div class="sc_staff_nav">
+            <div class="sc_staffs_topbar">
+                <div class="sc_staffs_status" onclick="openPage('view_tab', this)" id="defaultOpen">View</div>
+                <div class="sc_staffs_status" onclick="openPage('add_tab', this)">Add</div>
+                <div class="sc_staffs_status" id='edit_tab'>Edit</div>
+            </div>
+        </div>
+
+        <!-- staff details topbar end -->
+
+        <!-- Staff details container start -->
+        <div class="sc_content_container sc_cc_tab" id="view_tab">
+
+            <div class="sc_staff_details_container">
+
+                <!-- staff details container start -->
+                <!-- staff details for system A start -->
+                <div class="sc_systemA_staff">
+                    <h1>System A</h1>
+                    <div class="sc_systemA_staff_table">
+                        <table>
+                            <tr>
+                                <th width="5%">S.N.</th>
+                                <th width="35%">Name</th>
+                                <th width="20%">Image</th>
+                                <th width="20%">Post</th>
+                                <th width="20%">Action</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Griffin</td>
+                                <td>image.jpg</td>
+                                <td>Supervisor</td>
+                                <td><button class="sc_edit_btn" onclick="openAnotherPage('receive_tab', 'edit_tab')"><i class="fas fa-edit"></i> &nbsp;Edit</button>
+                                    <button class="sc_delete_btn"><i
+                                        class="far fa-trash-alt"></i> &nbsp;Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Griffin</td>
+                                <td>image.jpg</td>
+                                <td>Supervisor</td>
+                                <td><button class="sc_edit_btn" onclick="openAnotherPage('receive_tab', 'edit_tab')"><i class="fas fa-edit"></i> &nbsp;Edit</button>
+                                    <button class="sc_delete_btn"><i
+                                        class="far fa-trash-alt"></i> &nbsp;Delete</button></td></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Griffin</td>
+                                <td>image.jpg</td>
+                                <td>Supervisor</td>
+                                <td><button class="sc_edit_btn" onclick="openAnotherPage('receive_tab', 'edit_tab')"><i class="fas fa-edit"></i> &nbsp;Edit</button>
+                                    <button class="sc_delete_btn"><i
+                                        class="far fa-trash-alt"></i> &nbsp;Delete</button></td></td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+                <!-- staff details for system A end -->
+
+                <!-- staff details for system B start -->
+                <div class="sc_systemB_staff">
+                    <h1>System B</h1>
+                    <div class="sc_systemB_staff_table">
+                        <table>
+                            <tr>
+                                <th width="5%">S.N.</th>
+                                <th width="35%">Name</th>
+                                <th width="20%">Image</th>
+                                <th width="20%">Post</th>
+                                <th width="20%">Action</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Griffin</td>
+                                <td>image.jpg</td>
+                                <td>Supervisor</td>
+                                <td><button class="sc_edit_btn" onclick="openAnotherPage('receive_tab', 'edit_tab')"><i class="fas fa-edit"></i> &nbsp;Edit</button>
+                                    <button class="sc_delete_btn"><i
+                                        class="far fa-trash-alt"></i> &nbsp;Delete</button></td></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Griffin</td>
+                                <td>image.jpg</td>
+                                <td>Supervisor</td>
+                                <td><button class="sc_edit_btn" onclick="openAnotherPage('receive_tab', 'edit_tab')"><i class="fas fa-edit"></i> &nbsp;Edit</button>
+                                    <button class="sc_delete_btn"><i
+                                        class="far fa-trash-alt"></i> &nbsp;Delete</button></td></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Griffin</td>
+                                <td>image.jpg</td>
+                                <td>Supervisor</td>
+                                <td><button class="sc_edit_btn" onclick="openAnotherPage('receive_tab', 'edit_tab')"><i class="fas fa-edit"></i> &nbsp;Edit</button>
+                                    <button class="sc_delete_btn"><i
+                                        class="far fa-trash-alt"></i> &nbsp;Delete</button></td></td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+                <!-- staff details for system B end -->
+
+                <!-- staff details for system c start -->
+                <div class="sc_systemC_staff">
+                    <h1>System C</h1>
+                    <div class="sc_systemC_staff_table">
+                        <table>
+                            <tr>
+                                <th width="5%">S.N.</th>
+                                <th width="35%">Name</th>
+                                <th width="20%">Image</th>
+                                <th width="20%">Post</th>
+                                <th width="20%">Action</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Griffin</td>
+                                <td>image.jpg</td>
+                                <td>Supervisor</td>
+                                <td><button class="sc_edit_btn" onclick="openAnotherPage('receive_tab', 'edit_tab')"><i class="fas fa-edit"></i> &nbsp;Edit</button>
+                                    <button class="sc_delete_btn"><i
+                                        class="far fa-trash-alt"></i> &nbsp;Delete</button></td></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Griffin</td>
+                                <td>image.jpg</td>
+                                <td>Supervisor</td>
+                                <td><button class="sc_edit_btn" onclick="openAnotherPage('receive_tab', 'edit_tab')"><i class="fas fa-edit"></i> &nbsp;Edit</button>
+                                    <button class="sc_delete_btn"><i
+                                        class="far fa-trash-alt"></i> &nbsp;Delete</button></td></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Griffin</td>
+                                <td>image.jpg</td>
+                                <td>Supervisor</td>
+                                <td><button class="sc_edit_btn" onclick="openAnotherPage('receive_tab', 'edit_tab')"><i class="fas fa-edit"></i> &nbsp;Edit</button>
+                                    <button class="sc_delete_btn"><i
+                                        class="far fa-trash-alt"></i> &nbsp;Delete</button></td></td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+                <!-- staff details for system c end -->
+
+                <!-- staff details container end -->
+
+            </div>
+
+        </div>
+<!-- ***************************************************************************************************************************** -->
+<!-- add staff start -->
+<!-- Staff details container start -->
+<div class="sc_content_container  sc_cc_tab" id="add_tab">
+
+    <div class="sc_staff_details_container">
+
+        <!-- form for staff details and edit start -->
+        <div class="sc_edit_container">
+            <div class="sc_edit_row">
+                <div class="sc_edit_column1">
+                    <h3>Add Image</h3>
+                    <div class="sc_edit_image">
+                        <img src="Images/user.png" alt="">
+                    </div>
+                </div>
+                <div class="sc_edit_column2">
+                    <div class="sc_edit_form">
+                        <form action="#">
+                            <div class="sc_col2_row">
+                                <div class="col2-25">
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="col2-75">
+                                    <input type="text" id="name"
+                                        name="name" placeholder="Your name..">
+                                </div>
+                            </div>
+                            <div class="sc_col2_row">
+                                <div class="col2-25">
+                                    <label for="fname">Address</label>
+                                </div>
+                                <div class="col2-75">
+                                    <input type="text" id="address"
+                                        name="address" placeholder="Your Address..">
+                                </div>
+                            </div>
+                            <div class="sc_col2_row">
+                                <div class="col2-25">
+                                    <label for="phone">Phone</label>
+                                </div>
+                                <div class="col2-75">
+                                    <input type="text" id="phone"
+                                        name="phone" placeholder="Your phone number..">
+                                </div>
+                            </div>
+                            <div class="sc_col2_row">
+                                <div class="col2-25">
+                                    <label for="mobile">Phone</label>
+                                </div>
+                                <div class="col2-75">
+                                    <input type="text" id="mobile"
+                                        name="mobile" placeholder="Your mobile number..">
+                                </div>
+                            </div>
+                            <div class="sc_col2_row">
+                                <div class="col2-25">
+                                    <label for="post">Post</label>
+                                </div>
+                                <div class="col2-75">
+                                    <select id="post" name="post">
+                                        <option value="none">None</option>
+                                        <option value="systemA">System A</option>
+                                        <option value="systemA">System B</option>
+                                        <option value="systemC">System C</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="sc_col2_row">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- form for staff details and edit start -->
+
+        </div>
+        <!-- Staff details container end -->
+
+    </div>
+</div>
+<!-- add staff end -->
+<!-- ******************************************************************************************************** -->
+
+<!-- edit staff start -->
+<!-- Staff details container start -->
+<div class="sc_content_container sc_cc_tab" id="receive_tab">
+
+    <div class="sc_staff_details_container">
+
+        <!-- form for staff details and edit start -->
+        <div class="sc_edit_container">
+            <div class="sc_edit_row">
+                <div class="sc_edit_column1">
+                    <h3>Edit Image</h3>
+                    <div class="sc_edit_image">
+                        <img src="Images/user.png" alt="">
+                    </div>
+                </div>
+                <div class="sc_edit_column2">
+                    <div class="sc_edit_form">
+                        <form action="#">
+                            <div class="sc_col2_row">
+                                <div class="col2-25">
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="col2-75">
+                                    <input type="text" id="name"
+                                        name="name" placeholder="Your
+                                        name..">
+                                </div>
+                            </div>
+                            <div class="sc_col2_row">
+                                <div class="col2-25">
+                                    <label for="fname">Address</label>
+                                </div>
+                                <div class="col2-75">
+                                    <input type="text" id="address"
+                                        name="address" placeholder="Your
+                                        Address..">
+                                </div>
+                            </div>
+                            <div class="sc_col2_row">
+                                <div class="col2-25">
+                                    <label for="phone">Phone</label>
+                                </div>
+                                <div class="col2-75">
+                                    <input type="text" id="phone"
+                                        name="phone" placeholder="Your
+                                        phone number..">
+                                </div>
+                            </div>
+                            <div class="sc_col2_row">
+                                <div class="col2-25">
+                                    <label for="mobile">Phone</label>
+                                </div>
+                                <div class="col2-75">
+                                    <input type="text" id="mobile"
+                                        name="mobile" placeholder="Your
+                                        mobile number..">
+                                </div>
+                            </div>
+                            <div class="sc_col2_row">
+                                <div class="col2-25">
+                                    <label for="post">Post</label>
+                                </div>
+                                <div class="col2-75">
+                                    <select id="post" name="post">
+                                        <option value="none">None</option>
+                                        <option value="systemA">System A</option>
+                                        <option value="systemA">System B</option>
+                                        <option value="systemC">System C</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="sc_col2_row">
+                                <input type="submit" value="Update Profile">
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- form for staff details and edit start -->
+
+        </div>
+        <!-- Staff details container end -->
+
+    </div>
+</div>
+<!-- edit staff end -->
+
+        <script src="js/tabs.js"></script>
+        <!-- Staff details container end -->
+    </body>
+
+</html>

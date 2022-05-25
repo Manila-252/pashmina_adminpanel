@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200&display=swap");
+
+body{
+    padding: 0;
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: #dddddd;
+    font-family: "Gothic A1", sans-serif;
+}
+/* navbar start */
+.sc_navbar{
+  top: 0;
+  position: sticky;
+  color: white;
+  background-color: #2a435b;  
+  padding: 0px 10px 0px 30px;
+  z-index: 5;
+  height: 65px;
+}
+
+.sc_navbar_extra{
+  position: relative !important;
+  left: 260px;
+  width: calc(100% - 260px);
+}
+
+.sc_header {
+  overflow: hidden;
+  /* background-color: #f1f1f1; */
+  background-image: url('../Images/logo_white.png');
+  background-size: 12%;
+  background-repeat: no-repeat;
+  padding: 14px 0px;
+}
+
+.sc_header_right a {
+  float: left;
+  color: white;
+  text-align: center;  
+  padding: 5px 30px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  
+}
+
+.admin_hello{
+  margin: 0px 40px 0px 40px;
+  border: 1px solid #6b96bf5c;
+}
+
+.logout_btn{
+  border-radius: 30px;
+  background-color: red;
+  font-weight: bolder;
+}
+
+/* .sc_header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+} */
+
+.sc_header_right a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.sc_header_right {
+  float: right;
+}
+
+.sc_logo_div{
+  float: left;
+  width: 150px;
+  height: 50px;
+  padding: 5px;
+}
+
+.logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* sidebar */
+.sc_sidebar {
+  margin: 0;
+  width: 210px;
+  background-color: #2a435b;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  color: white;
+}
+.sc_sidebar i{
+  padding: 0px 10px 0px 0px;
+}
+
+.sc_sidebar a {
+  display: block;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+ 
+.sc_sidebar a.active {
+  background-color: #dddddd;
+  color: black;
+}
+
+.sc_sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+/* search container */
+.sc_search{
+ float: right;
+}
+
+.sc_wages_content .sc_search button:hover {
+  background: #ccc;
+}
+
+/* staff details topbar */
+.sc_tab_active{
+  background-color: rgb(221, 221, 221)!important;
+    color: rgb(42, 67, 91)!important;
+    padding: 8px 60px!important;
+}
+
+.sc_staff_nav{
+  top: 24px;
+  background-color: #2a435b;
+  position: fixed;
+  /* width: calc(100% - 200px); */
+  z-index: 6;
+  left: 210px;
+  /* border: 10px solid #dddddd; */
+  /* border-style: hidden hidden solid hidden; */
+}
+
+.sc_staffs_topbar{
+  display: flex;
+  /* padding-left: 3px; */
+}
+
+.sc_staffs_topbar a{
+  text-decoration: none;  
+  font-size: 20px;
+}
+
+.sc_staffs_status{
+  background-color: grey;
+  padding: 8px 30px;
+  margin: 0px 3px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  text-decoration: none;  
+  font-size: 20px;
+}
+
+.sc_staffs_active{
+  background-color: #dddddd;
+  padding: 8px 60px;
+  margin: 0px 3px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
+  color: #2a435b;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.sc_staffs_notactive{
+  background-color: grey;
+  padding: 8px 30px;
+  margin: 0px 3px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.sc_staff_topbar a{
+  text-align: center;
+  padding: 10px 50px;
+  text-decoration: none;
+  font-size: 20px; 
+  line-height: 25px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.sc_staff_topbar a.sc_staff_active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .sc_staff_topbar a:hover:not(.sc_staff_active) {
+    background-color: #555;
+    color: white;
+  }
+
+/* Main Content Container */
+
+/* .sc_cc_tab{
+  margin-top: 35px;
+} */
+
+.sc_content_container{
+  position: relative;
+  left: 210px;
+  padding: 30px;
+  width: calc(100% - 270px);
+}
+
+.tab_container h2{
+  margin: 0px;
+}
+
+/* yarn supply received session */
+.sc_yarn_received_input {
+  margin-top: 20px;
+}
+
+.sc_yarn_form {
+  align-items: center;
+}
+
+.sc_yarn_form label{
+  font-weight: bolder;
+}
+
+.sc_yarn_form input, select {
+  vertical-align: middle;
+  margin: 0px 40px 0px 15px;
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid #2a435b;
+  width: 20%;
+  border-radius: 5px;
+}
+
+.sc_yarn_form button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  border: 2px solid #28a745;
+  color: white;
+  cursor: pointer;
+  border-radius: 15px;
+  float: right;
+}
+
+.sc_yarn_form button:hover {
+  background-color: white;
+  color: #28a745;
+}

@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200&display=swap");
+
+body {
+  width: auto;
+  height: 100%;
+  font-family: "Gothic A1", sans-serif;
+}
+
+/* container 1 start */
+.sc_container1 {
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+}
+.sc_container1 .sc_row {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.sc_column1 {
+  width: 50%;
+  text-align: center;
+}
+.sc_column2 {
+  width: 50%;
+  text-align: center;
+}
+
+.sc_upload_btn_div{
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.sc_bc_topbtn {
+  text-decoration: none;
+  border: none;
+  padding: 12px 40px;
+  font-size: 16px;
+  background-color: #2a435b;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: 0s all;
+  border-radius: 2vw;
+}
+.sc_bc_topbtn:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+/* container 1 end */
+.sc_viewitems {
+  text-align: right;
+  font-weight: bolder;
+  margin-right: 2.7%;
+  margin-left: 2.7%;
+  font-size: 1.4vw;
+}
+.sc_viewitems select {
+  padding: 3px 8px 3px 8px;
+  font-size: 1.2vw;
+}
+/* container 2 start */
+.sc_container2 {
+  text-align: center;
+}
+.sc_container2 .sc_row {
+  display: flex;
+}
+.sc_container2 .sc_row .sc_column1 {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sc_container2 .sc_row .sc_column2 {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+table,
+th,
+td {
+  border: 1px solid rgb(77, 77, 77);
+}
+th,
+td {
+  padding: 7px;
+}
+table {
+  width: 90%;
+  margin-top: 4.5%;
+  border-collapse: collapse;
+  text-align: center;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.6vw;
+  margin-bottom: 4.5%;
+  border-radius: 20px;
+}
+th {
+  height: 35px;
+  background-color: #2a435b;
+  color: white;
+}
+/* container 2 end */
+
+/* container 3 start */
+
+.sc_container3 .sc_c3_row1 {
+  display: flex;
+  text-align: center;
+}
+.sc_container3 .sc_c3_row1 .sc_c3_column1 {
+  width: 20%;
+}
+.sc_container3 .sc_c3_row1 .sc_c3_column2 {
+  width: 60%;
+  display: block;
+}
+.sc_container3 .sc_c3_row1 .sc_c3_column3 {
+  width: 20%;
+}
+.sc_pagination {
+  display: inline-block;
+}
+.sc_pagination1 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+.sc_pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.sc_pagination a:hover{
+  font-weight: bolder;
+}
+
+.sc_pagination a.active {
+  background-color: #2a435b;
+  color: white;
+  border-radius: 5px;
+}
+.sc_pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+/* container 3 end */
+
+.sc_container4{
+  text-align: center;
+  margin-top: 20px
+}
+
+/* main container end */
+
+/* manual popup start*/
+.sc_form-popup {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(110, 109, 109, 0.5);
+  z-index: 6;
+  color: #ffffff;
+}
+.sc_form_container {
+  width: 80%;
+  margin-top: 2%;
+  background-color: rgb(223, 215, 215);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2vw;
+  height: -webkit-fill-available;  
+}
+
+.sc_popUp_content{
+  display: flex;
+  width: 100%;
+  
+}                                                                                
+
+/* left side start */
+
+.sc_form_left_col {
+  width: 30%;
+}
+
+
+.sc_form_top {
+  width: 80%;
+  display: flex;
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  margin-left: auto;
+  margin-right: auto;
+}
+h2 {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid #000; 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+  color: #ffffff;
+} 
+
+h2 span { 
+   background:rgb(20, 20, 20); 
+   padding:0 10px; 
+}
+
+.sc_entercode {
+  width: 100%;
+  padding: 8px 12px;
+}
+.sc_left_arrow {
+  height: 25px;
+  width: 25px;
+  margin-left: 4%;
+  padding: 0%;
+  margin-top: 1%;
+}
+.sc_left_arrow img {
+  height: 30px;
+  width: 30px;
+  padding: 0%;
+  margin: 0%;
+  border-radius: 40%;
+}
+
+/* left bottom input form */
+.sc_left_bottom {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  
+}
+.sc_left_row{
+  display: flex;
+}
+
+.sc_left_col-25 {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+  color: black;
+  font-size: 20px;
+}
+
+.sc_left_col-75 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+}
+
+ #type, #color, #size {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 15px;
+}
+#leftqty{
+  width: 88%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 15px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.sc_left_odbtn {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.sc_close_btn i{
+  color: #2a435b;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.sc_close_btn i:hover{
+  color: red;
+}
+
+
+/* left side end */
+
+.sc_vertical_line{
+  width: 0%;
+  border-left: 2px solid rgb(53, 53, 53);
+}
+
+/* right side start */
+.sc_form_right_col {
+  width: 70%;
+}
+.sc_right_close {
+  margin-top: 2%;
+  float: right;
+  margin-right: 3%;
+}
+
+.sc_right_table{
+  margin-top: 10%;
+}
+
+.sc_right_bottom{
+  display: flex;
+  margin-left: 2%;
+}
+.sc_right_confbtn{
+  text-decoration: none;
+  border: none;
+  padding: 10px 40px;
+  font-size: 16px;
+  background-color: #349dff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none; 
+  float: right;
+  margin-right: 5%;
+}
+.sc_right_confbtn:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  
+}
+/* right end */
+
+/* manual popup end */
+
+/* upload pdf popup */
+.sc_form-container1 {
+  width: 80%;
+  margin-top: 1.4%;
+  background-color: rgb(223, 215, 215);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2vw;
+}
+.sc_upload_pdf{
+  text-align: center;
+}
+.sc_uplconfirim_btn{
+  padding-bottom: 3%;
+}
+.sc_upload_confbtn{
+  text-decoration: none;
+  border: none;
+  padding: 10px 40px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+  border-radius: 2vw;
+  margin-left: 80%;
+}
+.sc_upload_confbtn:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+
+/* upload pdf end */

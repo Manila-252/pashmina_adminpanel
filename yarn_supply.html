@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/fontawesome-free-6.0.0-beta3-web/css/all.css">
+  <link rel="stylesheet" href="css/main_copy.css">
+  <link rel="stylesheet" href="css/yarn.css">
+    <link rel="stylesheet" href="css/add_order.css">
+  <title>Dashboard: Yarn Supply</title>
+</head>
+
+<body>
+  <!-- navigation bar start -->
+  <div class="sc_navbar">
+    <div class="sc_header">
+        <div class="sc_header_right">
+            <a href="#home" class="admin_hello">Hello Admin</a>
+            <a href="#" class="logout_btn"><i class="fa-solid fa-power-off"></i></a>
+        </div>
+    </div>
+</div>
+<!-- navigation bar End -->
+
+  <!-- side bar start -->
+  <div class="sc_sidebar_list">
+    <div class="sc_sidebar">
+        <a href="wage_page.html"><i class="fas fa-rupee-sign"></i>Wages</a>
+        <!-- <a href="barcode scan.html"><i class="fas fa-barcode"></i>Barcode Scan</a> -->
+        <a href="add_order/upload_order.php"><i class="fas fa-plus-circle"></i>Order Status</a>
+        <a href="system/in_systemA.php"><i class="fa-solid fa-network-wired"></i>System</a>
+        <a href="storage/cloth_storage.php"><i class="fa-solid fa-box-open"></i>Storage</a>
+        <a class="active" href="yarn_supply.html"><i class="fas fa-mitten"></i>Yarn Supply</a>
+        <a href="staff_details.html"><i class="fas fa-users"></i>Staff Details</a>
+    </div>
+</div>
+
+<!-- side bar End -->
+
+
+  <!-- staff details topbar start -->
+
+  <div class="sc_staff_nav">
+    <div class="sc_staffs_topbar">
+        <div class="sc_staffs_status" onclick="openPage('order_tab', this)" id="defaultOpen">Order</div>
+        <div class="sc_staffs_status" onclick="openPage('receive_tab', this)">Receive</div>
+    </div>
+  </div>
+
+  <!-- staff details topbar end -->
+
+  <!-- Order Container -->
+  <!-- .................................................................................................. -->
+
+  <!-- Staff details container start -->
+  <div class="sc_content_container sc_cc_tab" id="order_tab">
+    <!-- yarn containerb start -->
+    <div class="sc_yarn_container">
+
+      <!-- yarn supply order details start -->
+      <h2>Yarn For Order</h2>
+        <hr>
+        <div class="view_inList">
+            <div class="sc_view_record">
+                <div class="sc_view_record_table">
+                    <table>
+                        <tr>
+                            <th width="5%">S.N.</th>
+                            <th width="20%">Yarn Storage Id</th>
+                            <th width="15%">Type</th>
+                            <th width="15%">Ordered Weight(kg)</th>
+                            <th width="15%">Ordered Date</th>
+                            <th width="30%">Action</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>y05_2079-02-01</td>
+                            <td>Cashmere</td>
+                            <td>100</td>
+                            <td>2079-02-01</td>
+                            <td>
+                                <button class="sc_view_record_editbtn">Update</button>
+                                <button class="sc_view_record_deletebtn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>y05_2079-02-01</td>
+                            <td>Cashmere</td>
+                            <td>100</td>
+                            <td>2079-02-01</td>
+                            <td>
+                                <button class="sc_view_record_editbtn">Update</button>
+                                <button class="sc_view_record_deletebtn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>y05_2079-02-01</td>
+                            <td>Cashmere</td>
+                            <td>100</td>
+                            <td>2079-02-01</td>
+                            <td>
+                                <button class="sc_view_record_editbtn">Update</button>
+                                <button class="sc_view_record_deletebtn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>y05_2079-02-01</td>
+                            <td>Cashmere</td>
+                            <td>100</td>
+                            <td>2079-02-01</td>
+                            <td>
+                                <button class="sc_view_record_editbtn">Update</button>
+                                <button class="sc_view_record_deletebtn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>y05_2079-02-01</td>
+                            <td>Cashmere</td>
+                            <td>100</td>
+                            <td>2079-02-01</td>
+                            <td>
+                                <button class="sc_view_record_editbtn">Update</button>
+                                <button class="sc_view_record_deletebtn">Delete</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>  
+
+
+      <!-- yarn supply order details end -->
+      <div class="sc_yarn_printbtn">
+        <button>PRIINT PDF</button>
+      </div>
+    </div>
+    <!-- yarn container end -->
+  </div>
+
+  <!-- Receive Container -->
+  <!-- ...................................................................................................... -->
+
+  <!-- Staff details container start -->
+  <div class="sc_content_container sc_cc_tab" id="receive_tab">
+    <!-- yarn containerb start -->
+    <div class="sc_yarn_container">
+
+      <div class="sc_yarn_received_input">
+        <form class="sc_yarn_form" action="">
+          <label for="type">Type</label>
+          <select id="type" name="type">
+            <option value="Pashmina">Pashmina</option>
+            <option value="Muffler">Muffler</option>
+            <option value="Silk">Silk</option>
+          </select>
+          <label for="kg">K.G.</label>
+          <input type="text" id="date" name="date" placeholder="Enter Weight in KG">
+
+          <label for="date">Date</label>
+          <input type="text" id="date" name="date" placeholder="Enter Date">
+
+          <button type="submit">Enter</button>
+        </form>
+
+      </div>
+      <!-- yarn supply order details start -->
+      <div class="sc_yarn_supply">
+        <div class="sc_yarn_table">
+          <table>
+            <tr>
+              <th width="5%">S.N.</th>
+              <th width="25%">Type</th>
+              <th width="20%">Weight(K.G.)</th>
+              <th width="25%">Date</th>
+              <th width="25%">Action</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Pashmina</td>
+              <td>100</td>
+              <td>2078-01-05</td>
+              <td>
+                <button class="sc_yarn_editbtn"><i class="fas fa-edit"></i> &nbsp;Edit</button>
+                <span>
+                  <button class="sc_yarn_deletebtn"><i
+                    class="far fa-trash-alt"></i> &nbsp;Delete</button>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Pashmina</td>
+              <td>100</td>
+              <td>2078-01-05</td>
+              <td>
+                <button class="sc_yarn_editbtn"><i class="fas fa-edit"></i> &nbsp;Edit</button>
+                <span>
+                  <button class="sc_yarn_deletebtn"><i
+                    class="far fa-trash-alt"></i> &nbsp;Delete</button>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Pashmina</td>
+              <td>100</td>
+              <td>2078-01-05</td>
+              <td>
+                <button class="sc_yarn_editbtn"><i class="fas fa-edit"></i> &nbsp;Edit</button>
+                <span>
+                  <button class="sc_yarn_deletebtn"><i
+                      class="far fa-trash-alt"></i> &nbsp;Delete</button>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Pashmina</td>
+              <td>100</td>
+              <td>2078-01-05</td>
+              <td>
+                <button class="sc_yarn_editbtn"><i class="fas fa-edit"></i> &nbsp;Edit</button>
+                <span>
+                  <button class="sc_yarn_deletebtn"><i
+                    class="far fa-trash-alt"></i> &nbsp;Delete</button>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+
+      <!-- yarn supply order details end -->
+      <div class="sc_yarn_printbtn">
+        <button>DONE</button>
+      </div>
+    </div>
+    <!-- yarn container end -->
+  </div>
+
+  <script src="js/tabs.js"></script>
+
+</body>
+
+</html>
