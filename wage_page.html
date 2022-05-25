@@ -88,8 +88,8 @@
           <td>100</td>
           <td>1000</td>
           <td><a href="#"><button class="sc_detailbtn" onclick="openform('sc_myForm')">Details</button> </a>
-          <button class="sc_editbtn"><i class="fas fa-edit"></i> &nbsp;Edit</button>
-          <button class="sc_deletebtn">Delete</button></td>
+            <a href="#"><button class="sc_editbtn" onclick="openform('sc_myForm_edit')">Edit </button> </a>
+            </button><button class="sc_deletebtn">Delete</button></td>
         </tr>
         <tr>
           <td>1</td>
@@ -98,8 +98,8 @@
           <td>100</td>
           <td>1000</td>
           <td><a href="#"><button class="sc_detailbtn" onclick="openform('sc_myForm')">Details</button> </a>
-          <button class="sc_editbtn"><i class="fas fa-edit"></i> &nbsp;Edit</button>
-          <button class="sc_deletebtn">Delete</button></td>
+              <a href="#"><button class="sc_editbtn" onclick="openform('sc_myForm_edit')">Edit </button> </a>
+              <button class="sc_deletebtn">Delete</button></td>
         </tr>
 
       </table>
@@ -156,6 +156,62 @@
           </div>
         </div>
       </div>
+      <!----for edit pop up-->
+      <div class="sc_form-popup" id="sc_myForm_edit">
+        <div class="sc_user_info">
+          <button type="button" class="sc_user_closebtn" onclick="closeform('sc_myForm_edit')"><i
+              class="fas fa-times"></i></button>
+          <div class="sc_user_content">
+            <div class="sc_user_description">
+              <div class="sc_edit_form">
+                <form action="#">
+                    <div class="sc_col2_row">
+                        <div class="col2-25">
+                            <label for="name">Type</label>
+                        </div>
+                        <div class="col2-75">
+                            <input type="text" id="name"
+                                name="name" placeholder="type..">
+                        </div>
+                    </div>
+                    <div class="sc_col2_row">
+                        <div class="col2-25">
+                            <label for="fname">Size</label>
+                        </div>
+                        <div class="col2-75">
+                            <input type="text" id="address"
+                                name="address" placeholder="size..">
+                        </div>
+                    </div>
+                    <div class="sc_col2_row">
+                        <div class="col2-25">
+                            <label for="phone">Piece</label>
+                        </div>
+                        <div class="col2-75">
+                            <input type="text" id="phone"
+                                name="phone" placeholder="piece..">
+                        </div>
+                    </div>
+                    <div class="sc_col2_row">
+                        <div class="col2-25">
+                            <label for="mobile">Wages</label>
+                        </div>
+                        <div class="col2-75">
+                            <input type="text" id="mobile"
+                                name="mobile" placeholder="Your wages..">
+                        </div>
+                      </div>
+                    <div class="sc_col2_row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     </div>
   </div>

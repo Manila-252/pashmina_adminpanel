@@ -146,7 +146,7 @@
   }
 
   .sc_detailbtn{
-      font-size: 16px;
+      /* font-size: 16px; */
       cursor: pointer;
       background-color: #2a435b;
       color: white;
@@ -246,3 +246,56 @@
   color: red;
 }
    /* pop up session end */
+
+/* form for edit staff details */
+input[type=text], select, textarea {
+  width: 95%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 22px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #28a745;
+  color: white;
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+}
+
+input[type=submit]:hover {
+  background-color: #28a745;
+}
+
+.sc_edit_form {
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.col2-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col2-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.sc_col2_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
