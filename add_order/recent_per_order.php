@@ -51,6 +51,7 @@
                                 <a href="view_inList.php">
                                     <button class="sc_view_record_editbtn">View</button>
                                 </a>
+                                <a href="list_forSystemA.php"><button class="sc_view_record_editbtn" style="width: 50%;">Make ready for System A</button></a>
                             </td>
                         </tr>
                         <tr>
@@ -61,6 +62,7 @@
                                 <a href="view_inList.php">
                                     <button class="sc_view_record_editbtn">View</button>
                                 </a>
+                                <a href="list_forSystemA.php"><button class="sc_view_record_editbtn" style="width: 50%;">Make ready for System A</button></a>
                             </td>
                         </tr>
                         <tr>
@@ -71,6 +73,7 @@
                                 <a href="view_inList.php">
                                     <button class="sc_view_record_editbtn">View</button>
                                 </a>
+                                <a href="list_forSystemA.php"><button class="sc_view_record_editbtn" style="width: 50%;">Make ready for System A</button></a>
                             </td>
                         </tr>
                         <tr>
@@ -81,6 +84,7 @@
                                 <a href="view_inList.php">
                                     <button class="sc_view_record_editbtn">View</button>
                                 </a>
+                                <a href="list_forSystemA.php"><button class="sc_view_record_editbtn" style="width: 50%;">Make ready for System A</button></a>
                             </td>
                         </tr>
                     </table>
