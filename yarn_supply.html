@@ -81,7 +81,7 @@
                             <td>100</td>
                             <td>2079-02-01</td>
                             <td>
-                                <button class="sc_view_record_editbtn">Update</button>
+                              <a href="#"><button class="sc_view_record_editbtn" onclick="openform('sc_myForm_edit_order')">Update </button> </a>
                                 <button class="sc_view_record_deletebtn">Delete</button>
                             </td>
                         </tr>
@@ -92,7 +92,7 @@
                             <td>100</td>
                             <td>2079-02-01</td>
                             <td>
-                                <button class="sc_view_record_editbtn">Update</button>
+                              <a href="#"><button class="sc_view_record_editbtn" onclick="openform('sc_myForm_edit_order')">Update </button> </a>
                                 <button class="sc_view_record_deletebtn">Delete</button>
                             </td>
                         </tr>
@@ -103,7 +103,7 @@
                             <td>100</td>
                             <td>2079-02-01</td>
                             <td>
-                                <button class="sc_view_record_editbtn">Update</button>
+                              <a href="#"><button class="sc_view_record_editbtn" onclick="openform('sc_myForm_edit_order')">Update </button> </a>
                                 <button class="sc_view_record_deletebtn">Delete</button>
                             </td>
                         </tr>
@@ -114,7 +114,7 @@
                             <td>100</td>
                             <td>2079-02-01</td>
                             <td>
-                                <button class="sc_view_record_editbtn">Update</button>
+                              <a href="#"><button class="sc_view_record_editbtn" onclick="openform('sc_myForm_edit_order')">Update </button> </a>
                                 <button class="sc_view_record_deletebtn">Delete</button>
                             </td>
                         </tr>
@@ -125,7 +125,8 @@
                             <td>100</td>
                             <td>2079-02-01</td>
                             <td>
-                                <button class="sc_view_record_editbtn">Update</button>
+                              <a href="#"><button class="sc_view_record_editbtn" onclick="openform('sc_myForm_edit_order')">Update </button> </a>
+                                <!-- <button class="sc_view_record_editbtn">Update</button> -->
                                 <button class="sc_view_record_deletebtn">Delete</button>
                             </td>
                         </tr>
@@ -186,7 +187,7 @@
               <td>100</td>
               <td>2078-01-05</td>
               <td>
-                <button class="sc_yarn_editbtn"><i class="fas fa-edit"></i> &nbsp;Edit</button>
+                <a href="#"><button class="sc_yarn_editbtn" onclick="openform('sc_myForm_edit_receive')"><i class="fas fa-edit"></i> &nbsp;Edit </button> </a>
                 <span>
                   <button class="sc_yarn_deletebtn"><i
                     class="far fa-trash-alt"></i> &nbsp;Delete</button>
@@ -199,7 +200,7 @@
               <td>100</td>
               <td>2078-01-05</td>
               <td>
-                <button class="sc_yarn_editbtn"><i class="fas fa-edit"></i> &nbsp;Edit</button>
+                <a href="#"><button class="sc_yarn_editbtn" onclick="openform('sc_myForm_edit_receive')"><i class="fas fa-edit"></i> &nbsp;Edit </button> </a>
                 <span>
                   <button class="sc_yarn_deletebtn"><i
                     class="far fa-trash-alt"></i> &nbsp;Delete</button>
@@ -212,7 +213,7 @@
               <td>100</td>
               <td>2078-01-05</td>
               <td>
-                <button class="sc_yarn_editbtn"><i class="fas fa-edit"></i> &nbsp;Edit</button>
+                <a href="#"><button class="sc_yarn_editbtn" onclick="openform('sc_myForm_edit_receive')"><i class="fas fa-edit"></i> &nbsp;Edit </button> </a>
                 <span>
                   <button class="sc_yarn_deletebtn"><i
                       class="far fa-trash-alt"></i> &nbsp;Delete</button>
@@ -225,7 +226,7 @@
               <td>100</td>
               <td>2078-01-05</td>
               <td>
-                <button class="sc_yarn_editbtn"><i class="fas fa-edit"></i> &nbsp;Edit</button>
+                <a href="#"><button class="sc_yarn_editbtn" onclick="openform('sc_myForm_edit_receive')"><i class="fas fa-edit"></i> &nbsp;Edit </button> </a>
                 <span>
                   <button class="sc_yarn_deletebtn"><i
                     class="far fa-trash-alt"></i> &nbsp;Delete</button>
@@ -244,6 +245,109 @@
     </div>
     <!-- yarn container end -->
   </div>
+ <!----for  order update pop up-->
+ <div class="sc_form-popup" id="sc_myForm_edit_order">
+  <div class="sc_user_info">
+    <button type="button" class="sc_user_closebtn" onclick="closeform('sc_myForm_edit_order')"><i
+        class="fas fa-times"></i></button>
+    <div class="sc_user_content">
+      <div class="sc_user_description">
+        <div class="sc_update_form">
+          <form action="#">
+              <div class="sc_col2_row">
+                  <div class="col2-25">
+                      <label for="name">Yarn Storage Id</label>
+                  </div>
+                  <div class="col2-75">
+                      <input type="text" id="name"
+                          name="name" placeholder="storage id..">
+                  </div>
+              </div>
+              <div class="sc_col2_row">
+                  <div class="col2-25">
+                      <label for="fname">Type</label>
+                  </div>
+                  <div class="col2-75">
+                      <input type="text" id="address"
+                          name="address" placeholder="type..">
+                  </div>
+              </div>
+              <div class="sc_col2_row">
+                  <div class="col2-25">
+                      <label for="phone">Ordered Weight(kg)</label>
+                  </div>
+                  <div class="col2-75">
+                      <input type="text" id="phone"
+                          name="phone" placeholder="weight..">
+                  </div>
+              </div>
+              <div class="sc_col2_row">
+                  <div class="col2-25">
+                      <label for="mobile">Ordered Date</label>
+                  </div>
+                  <div class="col2-75">
+                      <input type="text" id="mobile"
+                          name="mobile" placeholder="date..">
+                  </div>
+                </div>
+              <div class="sc_col2_row">
+                  <input type="submit" value="Submit">
+              </div>
+          </form>
+
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- order update pop up ends -->
+<!----for receive edit pop up-->
+<div class="sc_form-popup" id="sc_myForm_edit_receive">
+  <div class="sc_user_info1">
+    <button type="button" class="sc_user_closebtn" onclick="closeform('sc_myForm_edit_receive')"><i
+        class="fas fa-times"></i></button>
+    <div class="sc_user_content">
+      <div class="sc_user_description">
+        <div class="sc_edit_form">
+          <form action="#">
+              <div class="sc_col3_row">
+                  <div class="col3-25">
+                      <label for="name">Type</label>
+                  </div>
+                  <div class="col3-75">
+                      <input type="text" id="name"
+                          name="name" placeholder="type..">
+                  </div>
+              </div>
+              <div class="sc_col3_row">
+                  <div class="col3-25">
+                      <label for="fname">Weight(K.G.)</label>
+                  </div>
+                  <div class="col3-75">
+                      <input type="text" id="address"
+                          name="address" placeholder="weight..">
+                  </div>
+              </div>
+              <div class="sc_col3_row">
+                  <div class="col3-25">
+                      <label for="phone">Date</label>
+                  </div>
+                  <div class="col3-75">
+                      <input type="text" id="phone"
+                          name="phone" placeholder="date..">
+                  </div>
+              </div>
+              <div class="sc_col2_row">
+                  <input type="submit" value="Submit">
+              </div>
+          </form>
+
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- receive edit pop up ends -->
 
   <script src="js/tabs.js"></script>
 
