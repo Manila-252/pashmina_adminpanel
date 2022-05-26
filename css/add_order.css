@@ -700,8 +700,11 @@ td {
     margin-right: auto;
     border-radius: 2%;
 }
+
+
 /* for update */
-.sc_user_info_update_systemA{
+
+.sc_user_info_update_systemA {
     width: 60%;
     height: 90%;
     margin-top: 4%;
@@ -710,7 +713,8 @@ td {
     margin-right: auto;
     border-radius: 2%;
 }
-.sc_user_info_update_systemB{
+
+.sc_user_info_update_systemB {
     width: 60%;
     height: 85%;
     margin-top: 4%;
@@ -799,8 +803,8 @@ label {
 input[type=submit] {
     background-color: #28a745;
     color: white;
-    /* margin-top: 20px;
-    padding: 12px 20px; */
+    margin-top: 20px;
+    padding: 12px 20px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
