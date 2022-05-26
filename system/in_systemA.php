@@ -53,7 +53,9 @@
                             <td>200</td>
                             <td>100</td>
                             <td>
-                                <button class="sc_view_record_editbtn">Update</button>
+                                <!-- <button class="sc_view_record_editbtn">Update</button> -->
+                                <button class="sc_view_record_editbtn" onclick="openform('sc_myForm_update')">Update</button>
+                                <!-- <button class="sc_view_record_editbtn" onclick="openAnotherPage('receive_tab', 'edit_tab')">Update</button> -->
                                 <button class="sc_view_record_deletebtn">Delete</button>
                             </td>
                         </tr>
@@ -67,7 +69,7 @@
                             <td>200</td>
                             <td>100</td>
                             <td>
-                                <button class="sc_view_record_editbtn">Update</button>
+                                <button class="sc_view_record_editbtn" onclick="openform('sc_myForm_update')">Update</button>
                                 <button class="sc_view_record_deletebtn">Delete</button>
                             </td>
                         </tr>
@@ -81,7 +83,7 @@
                             <td>200</td>
                             <td>100</td>
                             <td>
-                                <button class="sc_view_record_editbtn">Update</button>
+                                <button class="sc_view_record_editbtn" onclick="openform('sc_myForm_update')">Update</button>
                                 <button class="sc_view_record_deletebtn">Delete</button>
                             </td>
                         </tr>
@@ -95,10 +97,11 @@
                             <td>200</td>
                             <td>100</td>
                             <td>
-                                <button class="sc_view_record_editbtn">Update</button>
+                                <!-- <button class="sc_view_record_editbtn">Update</button> -->
+                                <button class="sc_view_record_editbtn" onclick="openform('sc_myForm_update')">Update</button>
                                 <button class="sc_view_record_deletebtn">Delete</button>
                             </td>
-                        </tr>
+                        </tr>   
                     </table>
                 </div>
             </div>
@@ -175,7 +178,87 @@
     </div>
 </div>
 </div>
+
 <!-- add record container end -->
+
+
+<!-- for update popup code ------------->
+<div class="sc_form-popup" id="sc_myForm_update">
+  <div class="sc_user_info_update_systemA">
+    <button type="button" class="sc_user_closebtn" onclick="closeform('sc_myForm_update')"><i class="fas fa-times"></i></button>
+    <div class="sc_user_content">
+      <div class="sc_user_description">
+        <div class="sc_edit_form">
+          <form action="#">
+            <div class="sc_col2_row">
+              <div class="col2-25">
+                <label for="name">Barcode</label>
+              </div>
+              <div class="col2-75">
+                <input type="text" id="name" name="name" placeholder="barcode..">
+              </div>
+            </div>
+            <div class="sc_col2_row">
+              <div class="col2-25">
+                <label for="fname">Record From</label>
+              </div>
+              <div class="col2-75">
+                <input type="text" id="address" name="address" placeholder="size..">
+              </div>
+            </div>
+            <div class="sc_col2_row">
+              <div class="col2-25">
+                <label for="phone">Size</label>
+              </div>
+              <div class="col2-75">
+                <input type="text" id="phone" name="phone" placeholder="size of material..">
+              </div>
+            </div>
+            <div class="sc_col2_row">
+              <div class="col2-25">
+                <label for="mobile">Type</label>
+              </div>
+              <div class="col2-75">
+                <input type="text" id="mobile" name="mobile" placeholder="type..">
+              </div>
+            </div>
+            <div class="sc_col2_row">
+              <div class="col2-25">
+                <label for="mobile">Order QTY</label>
+              </div>
+              <div class="col2-75">
+                <input type="text" id="mobile" name="mobile" placeholder="order quantity..">
+              </div>
+            </div>
+            <div class="sc_col2_row">
+              <div class="col2-25">
+                <label for="mobile">inStore QTY</label>
+              </div>
+              <div class="col2-75">
+                <input type="text" id="mobile" name="mobile" placeholder="inStore quantity..">
+              </div>
+            </div>
+            <div class="sc_col2_row">
+              <div class="col2-25">
+                <label for="mobile">Rem. QTY</label>
+              </div>
+              <div class="col2-75">
+                <input type="text" id="mobile" name="mobile" placeholder="Remaining quanitity..">
+              </div>
+            </div>
+            
+            <div class="sc_col2_row">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- update pop up ends --------->
 
 
 

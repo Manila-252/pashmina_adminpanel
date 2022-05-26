@@ -60,7 +60,7 @@
                         <td>38</td>
                         <td>pink</td>
                         <td>
-                            <button class="sc_view_record_editbtn"><i class="fas fa-edit"></i> Edit</button>
+                            <button class="sc_view_record_editbtn" onclick="openform('sc_myForm_update')"><i class="fas fa-edit"></i> Edit</button>
                             <button class="sc_view_record_deletebtn"><i class="far fa-trash-alt"></i>
                                 Delete</button>
                         </td>
@@ -72,7 +72,7 @@
                         <td>38</td>
                         <td>red</td>
                         <td>
-                        <button class="sc_view_record_editbtn"><i class="fas fa-edit"></i> Edit</button>
+                            <button class="sc_view_record_editbtn" onclick="openform('sc_myForm_update')"><i class="fas fa-edit"></i> Edit</button>
                             <button class="sc_view_record_deletebtn"><i class="far fa-trash-alt"></i>
                                 Delete</button>
                         </td>
@@ -84,7 +84,7 @@
                         <td>38</td>
                         <td>blue</td>
                         <td>
-                        <button class="sc_view_record_editbtn"><i class="fas fa-edit"></i> Edit</button>
+                            <button class="sc_view_record_editbtn" onclick="openform('sc_myForm_update')"><i class="fas fa-edit"></i> Edit</button>
                             <button class="sc_view_record_deletebtn"><i class="far fa-trash-alt"></i>
                                 Delete</button>
                         </td>
@@ -96,7 +96,7 @@
                         <td>38</td>
                         <td>green</td>
                         <td>
-                        <button class="sc_view_record_editbtn"><i class="fas fa-edit"></i> Edit</button>
+                            <button class="sc_view_record_editbtn" onclick="openform('sc_myForm_update')"><i class="fas fa-edit"></i> Edit</button>
                             <button class="sc_view_record_deletebtn"><i class="far fa-trash-alt"></i>
                                 Delete</button>
                         </td>
@@ -108,6 +108,57 @@
 </div>
 <!-- add record container end -->
 
+<!-- view record edit update popup -->
+<div class="sc_form-popup" id="sc_myForm_update">
+  <div class="sc_user_info">
+    <button type="button" class="sc_user_closebtn" onclick="closeform('sc_myForm_update')"><i class="fas fa-times"></i></button>
+    <div class="sc_user_content">
+      <div class="sc_user_description">
+        <div class="sc_edit_form">
+          <form action="#">
+            <div class="sc_col2_row">
+              <div class="col2-25">
+                <label for="name">Code</label>
+              </div>
+              <div class="col2-75">
+                <input type="text" id="name" name="name" placeholder="Code no..">
+              </div>
+            </div>
+            <div class="sc_col2_row">
+              <div class="col2-25">
+                <label for="mobile">Type</label>
+              </div>
+              <div class="col2-75">
+                <input type="text" id="mobile" name="mobile" placeholder="type..">
+              </div>
+            </div>
+            <div class="sc_col2_row">
+              <div class="col2-25">
+                <label for="mobile">Size</label>
+              </div>
+              <div class="col2-75">
+                <input type="text" id="mobile" name="mobile" placeholder="size..">
+              </div>
+            </div>
+            <div class="sc_col2_row">
+              <div class="col2-25">
+                <label for="mobile">Color</label>
+              </div>
+              <div class="col2-75">
+                <input type="text" id="mobile" name="mobile" placeholder="color..">
+              </div>
+            </div>
+            <div class="sc_col2_row">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  view record edit popup ends -->
 
 
 <?php include 'add_order_end.php'; ?>
