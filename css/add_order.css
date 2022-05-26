@@ -700,6 +700,25 @@ td {
     margin-right: auto;
     border-radius: 2%;
 }
+/* for update */
+.sc_user_info_update_systemA{
+    width: 60%;
+    height: 90%;
+    margin-top: 4%;
+    background-color: rgb(223, 215, 215);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2%;
+}
+.sc_user_info_update_systemB{
+    width: 60%;
+    height: 85%;
+    margin-top: 4%;
+    background-color: rgb(223, 215, 215);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2%;
+}
 
 
 /* for update box in instore part */
