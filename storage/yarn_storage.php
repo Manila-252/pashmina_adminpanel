@@ -5,7 +5,7 @@
 <div class="sc_staff_nav">
     <div class="sc_staffs_topbar">
 
-        
+
         <a href="cloth_storage.php">
             <div class="sc_staffs_status">Cloth Storage</div>
         </a>
@@ -43,7 +43,7 @@
                             <td>100</td>
                             <td>100</td>
                             <td>
-                                <button class="sc_view_record_editbtn">Update</button>
+                                <button class="sc_view_record_editbtn" onclick="openform('sc_myForm_update_instore')">Update</button>
                                 <button class="sc_view_record_deletebtn">Delete</button>
                             </td>
                         </tr>
@@ -53,7 +53,7 @@
                             <td>100</td>
                             <td>100</td>
                             <td>
-                                <button class="sc_view_record_editbtn">Update</button>
+                                <button class="sc_view_record_editbtn" onclick="openform('sc_myForm_update_instore')">Update</button>
                                 <button class="sc_view_record_deletebtn">Delete</button>
                             </td>
                         </tr>
@@ -63,7 +63,7 @@
                             <td>100</td>
                             <td>100</td>
                             <td>
-                                <button class="sc_view_record_editbtn">Update</button>
+                                <button class="sc_view_record_editbtn" onclick="openform('sc_myForm_update_instore')">Update</button>
                                 <button class="sc_view_record_deletebtn">Delete</button>
                             </td>
                         </tr>
@@ -73,7 +73,7 @@
                             <td>100</td>
                             <td>100</td>
                             <td>
-                                <button class="sc_view_record_editbtn">Update</button>
+                                <button class="sc_view_record_editbtn" onclick="openform('sc_myForm_update_instore')">Update</button>
                                 <button class="sc_view_record_deletebtn">Delete</button>
                             </td>
                         </tr>
@@ -83,7 +83,7 @@
                             <td>100</td>
                             <td>100</td>
                             <td>
-                                <button class="sc_view_record_editbtn">Update</button>
+                                <button class="sc_view_record_editbtn" onclick="openform('sc_myForm_update_instore')">Update</button>
                                 <button class="sc_view_record_deletebtn">Delete</button>
                             </td>
                         </tr>
@@ -117,7 +117,7 @@
                             <td>100</td>
                             <td>2079-02-01</td>
                             <td>
-                                <button class="sc_view_record_editbtn">Update</button>
+                                <button class="sc_view_record_editbtn" onclick="openform('sc_myForm_update_fororder')">Update</button>
                                 <button class="sc_view_record_deletebtn">Delete</button>
                             </td>
                         </tr>
@@ -128,7 +128,7 @@
                             <td>100</td>
                             <td>2079-02-01</td>
                             <td>
-                                <button class="sc_view_record_editbtn">Update</button>
+                                <button class="sc_view_record_editbtn" onclick="openform('sc_myForm_update_fororder')">Update</button>
                                 <button class="sc_view_record_deletebtn">Delete</button>
                             </td>
                         </tr>
@@ -139,7 +139,7 @@
                             <td>100</td>
                             <td>2079-02-01</td>
                             <td>
-                                <button class="sc_view_record_editbtn">Update</button>
+                                <button class="sc_view_record_editbtn" onclick="openform('sc_myForm_update_fororder')">Update</button>
                                 <button class="sc_view_record_deletebtn">Delete</button>
                             </td>
                         </tr>
@@ -150,7 +150,7 @@
                             <td>100</td>
                             <td>2079-02-01</td>
                             <td>
-                                <button class="sc_view_record_editbtn">Update</button>
+                                <button class="sc_view_record_editbtn" onclick="openform('sc_myForm_update_fororder')">Update</button>
                                 <button class="sc_view_record_deletebtn">Delete</button>
                             </td>
                         </tr>
@@ -161,20 +161,114 @@
                             <td>100</td>
                             <td>2079-02-01</td>
                             <td>
-                                <button class="sc_view_record_editbtn">Update</button>
+                                <button class="sc_view_record_editbtn" onclick="openform('sc_myForm_update_fororder')">Update</button>
                                 <button class="sc_view_record_deletebtn">Delete</button>
                             </td>
                         </tr>
                     </table>
                 </div>
             </div>
-        </div>       
+        </div>
 
     </div>
 </div>
 </div>
 <!-- add record container end -->
 
+
+
+<div class="sc_form-popup" id="sc_myForm_update_instore">
+    <div class="sc_user_info_instore">
+        <button type="button" class="sc_user_closebtn" onclick="closeform('sc_myForm_update_instore')"><i class="fas fa-times"></i></button>
+        <div class="sc_user_content">
+            <div class="sc_user_description">
+                <div class="sc_edit_form">
+                    <form action="#">
+                        <div class="sc_col2_row">
+                            <div class="col2-25">
+                                <label for="name">Type</label>
+                            </div>
+                            <div class="col2-75">
+                                <input type="text" id="name" name="name" placeholder="type..">
+                            </div>
+                        </div>
+                        <div class="sc_col2_row">
+                            <div class="col2-25">
+                                <label for="fname">Weight(kg)</label>
+                            </div>
+                            <div class="col2-75">
+                                <input type="text" id="address" name="address" placeholder="size..">
+                            </div>
+                        </div>
+                        <div class="sc_col2_row">
+                            <div class="col2-25">
+                                <label for="phone">Threshold Wt.(kg)</label>
+                            </div>
+                            <div class="col2-75">
+                                <input type="text" id="phone" name="phone" placeholder="piece..">
+                            </div>
+                        </div>
+                        <div class="sc_col2_row">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- edit pop up ends --------->
+<div class="sc_form-popup" id="sc_myForm_update_fororder">
+<div class="sc_user_info_fororder">
+    <button type="button" class="sc_user_closebtn" onclick="closeform('sc_myForm_update_fororder')"><i class="fas fa-times"></i></button>
+    <div class="sc_user_content">
+        <div class="sc_user_description">
+            <div class="sc_edit_form">
+                <form action="#">
+                    <div class="sc_col2_row">
+                        <div class="col2-25">
+                            <label for="name">Yarn Storage id</label>
+                        </div>
+                        <div class="col2-75">
+                            <input type="text" id="name" name="name" placeholder="type..">
+                        </div>
+                    </div>
+                    <div class="sc_col2_row">
+                        <div class="col2-25">
+                            <label for="fname">Type</label>
+                        </div>
+                        <div class="col2-75">
+                            <input type="text" id="address" name="address" placeholder="size..">
+                        </div>
+                    </div>
+                    <div class="sc_col2_row">
+                        <div class="col2-25">
+                            <label for="phone">Ordered Wt.(kg)</label>
+                        </div>
+                        <div class="col2-75">
+                            <input type="text" id="phone" name="phone" placeholder="piece..">
+                        </div>
+                    </div>
+                    <div class="sc_col2_row">
+                        <div class="col2-25">
+                            <label for="mobile">Ordered Date</label>
+                        </div>
+                        <div class="col2-75">
+                            <input type="text" id="mobile" name="mobile" placeholder="Your wages..">
+                        </div>
+                    </div>
+                    <div class="sc_col2_row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
 
 <?php include 'storage_end.php'; ?>

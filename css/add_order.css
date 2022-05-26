@@ -184,6 +184,10 @@
     font-weight: bold;
 }
 
+.sc_view_record_table a {
+    text-decoration: none;
+}
+
 th {
     background-color: #2a435b;
     color: white;
@@ -716,6 +720,32 @@ td {
     border-radius: 2%;
 }
 
+
+/* for update box in instore part */
+
+.sc_user_info_instore {
+    width: 60%;
+    height: 60%;
+    margin-top: 4%;
+    background-color: rgb(223, 215, 215);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2%;
+}
+
+
+/* for update box in fororder part*/
+
+.sc_user_info_fororder {
+    width: 60%;
+    height: 70%;
+    margin-top: 4%;
+    background-color: rgb(223, 215, 215);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2%;
+}
+
 .sc_user_content {
     width: 80%;
     margin-left: auto;
@@ -769,8 +799,8 @@ label {
 input[type=submit] {
     background-color: #28a745;
     color: white;
-    margin-top: 20px;
-    padding: 12px 20px;
+    /* margin-top: 20px;
+    padding: 12px 20px; */
     border: none;
     border-radius: 20px;
     cursor: pointer;
