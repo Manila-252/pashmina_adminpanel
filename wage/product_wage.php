@@ -1,7 +1,24 @@
 <?php include 'wage_start.php'; ?>
 
-<div class="sc_content_container">
-    <div class="sc_wages_content">
+<div class="sc_staff_nav">
+  <div class="sc_staffs_topbar">
+
+    <a href="product_wage.php">
+      <div class="sc_tab_active sc_staffs_status">product Wage</div>
+    </a>
+    <a href="add_product_wage.php">
+      <div class="sc_staffs_status">Add Product Wage</div>
+    </a>
+    <a href="per_user_wage.php">
+      <div class="sc_staffs_status">Per User Wage</div>
+    </a>
+
+  </div>
+</div>
+
+
+<div class="sc_content_container sc_cc_tab">
+    <!-- <div class="sc_wages_content">
         <p class="sc_cost">Per Weaving Cost :
             <span class="sc_cost_span"> <input type="number" id="wages_cost" name="Quantity" placeholder="Enter cost" readonly>
             </span>
@@ -17,8 +34,6 @@
 
         </div>
     </div>
-
-
     <div class="sc_wages_sort">
         <form action="#">
             <label for="employee">Sort By:</label>
@@ -28,7 +43,7 @@
                 <option value="No. of weaving">No. of Weaving</option>
             </select>
         </form>
-    </div>
+    </div> -->
 
     <!-- wages calculation -->
     <div class="sc_wages_table">

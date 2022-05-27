@@ -2,220 +2,216 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/fontawesome-free-6.0.0-beta3-web/css/all.css">
-  <link rel="stylesheet" href="css/main_copy.css">
-  <link rel="stylesheet" href="css/wages.css">
-  <title>Dashboard: Wage Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fontawesome-free-6.0.0-beta3-web/css/all.css">
+    <link rel="stylesheet" href="css/main_copy.css">
+    <link rel="stylesheet" href="css/wages.css">
+    <title>Dashboard: Wage Page</title>
 </head>
 
 <body>
-  <!-- navigation bar start -->
-  <div class="sc_navbar">
-    <div class="sc_header">
-        <div class="sc_header_right">
-            <a href="#home" class="admin_hello">Hello Admin</a>
-            <a href="#" class="logout_btn"><i class="fa-solid fa-power-off"></i></a>
+    <!-- navigation bar start -->
+    <div class="sc_navbar">
+        <div class="sc_header">
+            <div class="sc_header_right">
+                <a href="#home" class="admin_hello">Hello Admin</a>
+                <a href="#" class="logout_btn"><i class="fa-solid fa-power-off"></i></a>
+            </div>
         </div>
     </div>
-</div>
-<!-- navigation bar End -->
+    <!-- navigation bar End -->
 
-  <!-- side bar start -->
-  <div class="sc_sidebar_list">
-    <div class="sc_sidebar">
-        <a class="active" href="wage_page.html"><i class="fas fa-rupee-sign"></i>Wages</a>
-        <!-- <a href="barcode scan.html"><i class="fas fa-barcode"></i>Barcode Scan</a> -->
-        <a href="add_order/upload_order.php"><i class="fas fa-plus-circle"></i>Order Status</a>
-        <a href="system/in_systemA.php"><i class="fa-solid fa-network-wired"></i>System</a>
-        <a href="storage/cloth_storage.php"><i class="fa-solid fa-box-open"></i>Storage</a>
-        <a href="yarn_supply.html"><i class="fas fa-mitten"></i>Yarn Supply</a>
-        <a href="staff_details.html"><i class="fas fa-users"></i>Staff Details</a>
+    <!-- side bar start -->
+    <div class="sc_sidebar_list">
+        <div class="sc_sidebar">
+            <a class="active" href="wage/product_wage.php"><i class="fas fa-rupee-sign"></i>Wages</a>
+            <!-- <a href="barcode scan.html"><i class="fas fa-barcode"></i>Barcode Scan</a> -->
+            <a href="add_order/upload_order.php"><i class="fas fa-plus-circle"></i>Order Status</a>
+            <a href="system/in_systemA.php"><i class="fa-solid fa-network-wired"></i>System</a>
+            <a href="storage/cloth_storage.php"><i class="fa-solid fa-box-open"></i>Storage</a>
+            <a href="yarn_supply.html"><i class="fas fa-mitten"></i>Yarn Supply</a>
+            <a href="staff_details.html"><i class="fas fa-users"></i>Staff Details</a>
+        </div>
     </div>
-</div>
 
-<!-- side bar End -->
+    <!-- side bar End -->
 
 
-  <div class="sc_content_container">
-    <div class="sc_wages_content">
-      <p class="sc_cost">Per Weaving Cost :
-        <span class="sc_cost_span"> <input type="number" id="wages_cost" name="Quantity" placeholder="Enter cost" readonly>         
+    <div class="sc_content_container">
+        <!-- <div class="sc_wages_content">
+            <p class="sc_cost">Per Weaving Cost :
+                <span class="sc_cost_span"> <input type="number" id="wages_cost" name="Quantity" placeholder="Enter cost" readonly>         
       </span>
-      <i class="fas fa-pencil-alt wage_edit" id="edit_wage_btn" onclick="edit_wage('wages_cost', 'edit_wage_btn', 'save_wage_btn')"></i>
-      <i class="fas fa-save wage_save" id="save_wage_btn"></i>
-    </p>
-     
-      <div class="sc_search">
-        <form action="#">
-          <input type="text" placeholder="Search.." name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
+                <i class="fas fa-pencil-alt wage_edit" id="edit_wage_btn" onclick="edit_wage('wages_cost', 'edit_wage_btn', 'save_wage_btn')"></i>
+                <i class="fas fa-save wage_save" id="save_wage_btn"></i>
+            </p>
 
-      </div>
-    </div>
+            <div class="sc_search">
+                <form action="#">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+
+            </div>
+        </div>
 
 
-    <div class="sc_wages_sort">
-      <form action="#">
-        <label for="employee">Sort By:</label>
-        <select id="employee" name="employee">
+        <div class="sc_wages_sort">
+            <form action="#">
+                <label for="employee">Sort By:</label>
+                <select id="employee" name="employee">
           <option value="name">Name</option>
           <option value="wage">Wage</option>
           <option value="No. of weaving">No. of Weaving</option>
         </select>
-      </form>
-    </div>
+            </form>
+        </div> -->
 
-    <!-- wages calculation -->
-    <div class="sc_wages_table">
+        <!-- wages calculation -->
+        <div class="sc_wages_table">
 
-      <table>
-        <tr>
-          <th width="5%">S.N.</th>
-          <th width="20%">Type</th>
-          <th width="20%">Size</th>
-          <th width="15%">Piece</th>
-          <th width="15%">Wage (Rs.)</th>
-          <th width="25%">Action</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>abc</td>
-          <td>38</td>
-          <td>100</td>
-          <td>1000</td>
-          <td><a href="#"><button class="sc_detailbtn" onclick="openform('sc_myForm')">Details</button> </a>
-            <a href="#"><button class="sc_editbtn" onclick="openform('sc_myForm_edit')">Edit </button> </a>
-            </button><button class="sc_deletebtn">Delete</button></td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>abc</td>
-          <td>38</td>
-          <td>100</td>
-          <td>1000</td>
-          <td><a href="#"><button class="sc_detailbtn" onclick="openform('sc_myForm')">Details</button> </a>
-              <a href="#"><button class="sc_editbtn" onclick="openform('sc_myForm_edit')">Edit </button> </a>
-              <button class="sc_deletebtn">Delete</button></td>
-        </tr>
-
-      </table>
-      <!-- for pop up page -->
-      <div class="sc_form-popup" id="sc_myForm">
-        <div class="sc_user_info">
-          <button type="button" class="sc_user_closebtn" onclick="closeform('sc_myForm')"><i
-              class="fas fa-times"></i></button>
-          <div class="sc_user_content">
-            <div class="sc_user_description">
-              <p>Name: Ram </p>
-              <p>Id: 12</p>
-              <p>Total Wage: 5000</p>
-              <p>No. of Weavings: 22</p>
-            </div>
-            <table class="sc_user_table">
-              <thead>
+            <table>
                 <tr>
-                  <th>S.N.</th>
-                  <th>No. of Weaving</th>
-                  <th>On Date</th>
-                  <th>Rate</th>
-                  <th>Sum</th>
-
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Griffin</td>
-                  <td>100</td>
-                  <td>1000</td>
-                  <td>500</td>
+                    <th width="5%">S.N.</th>
+                    <th width="20%">Type</th>
+                    <th width="20%">Size</th>
+                    <th width="15%">Piece</th>
+                    <th width="15%">Wage (Rs.)</th>
+                    <th width="25%">Action</th>
                 </tr>
                 <tr>
-                  <td>1</td>
-                  <td>Griffin</td>
-                  <td>100</td>
-                  <td>1000</td>
-                  <td>500</td>
+                    <td>1</td>
+                    <td>abc</td>
+                    <td>38</td>
+                    <td>100</td>
+                    <td>1000</td>
+                    <td><a href="#"><button class="sc_detailbtn" onclick="openform('sc_myForm')">Details</button> </a>
+                        <a href="#"><button class="sc_editbtn" onclick="openform('sc_myForm_edit')">Edit </button> </a>
+                        </button><button class="sc_deletebtn">Delete</button></td>
                 </tr>
-              </tbody>
-
-              <tfoot>
                 <tr>
-                  <th id="Total" colspan="4">Total</th>
-                  <td>2000</td>
+                    <td>1</td>
+                    <td>abc</td>
+                    <td>38</td>
+                    <td>100</td>
+                    <td>1000</td>
+                    <td><a href="#"><button class="sc_detailbtn" onclick="openform('sc_myForm')">Details</button> </a>
+                        <a href="#"><button class="sc_editbtn" onclick="openform('sc_myForm_edit')">Edit </button> </a>
+                        <button class="sc_deletebtn">Delete</button></td>
                 </tr>
-              </tfoot>
 
             </table>
-
-          </div>
-        </div>
-      </div>
-      <!----for edit pop up-->
-      <div class="sc_form-popup" id="sc_myForm_edit">
-        <div class="sc_user_info">
-          <button type="button" class="sc_user_closebtn" onclick="closeform('sc_myForm_edit')"><i
+            <!-- for pop up page -->
+            <div class="sc_form-popup" id="sc_myForm">
+                <div class="sc_user_info">
+                    <button type="button" class="sc_user_closebtn" onclick="closeform('sc_myForm')"><i
               class="fas fa-times"></i></button>
-          <div class="sc_user_content">
-            <div class="sc_user_description">
-              <div class="sc_edit_form">
-                <form action="#">
-                    <div class="sc_col2_row">
-                        <div class="col2-25">
-                            <label for="name">Type</label>
+                    <div class="sc_user_content">
+                        <div class="sc_user_description">
+                            <p>Name: Ram </p>
+                            <p>Id: 12</p>
+                            <p>Total Wage: 5000</p>
+                            <p>No. of Weavings: 22</p>
                         </div>
-                        <div class="col2-75">
-                            <input type="text" id="name"
-                                name="name" placeholder="type..">
-                        </div>
-                    </div>
-                    <div class="sc_col2_row">
-                        <div class="col2-25">
-                            <label for="fname">Size</label>
-                        </div>
-                        <div class="col2-75">
-                            <input type="text" id="address"
-                                name="address" placeholder="size..">
-                        </div>
-                    </div>
-                    <div class="sc_col2_row">
-                        <div class="col2-25">
-                            <label for="phone">Piece</label>
-                        </div>
-                        <div class="col2-75">
-                            <input type="text" id="phone"
-                                name="phone" placeholder="piece..">
-                        </div>
-                    </div>
-                    <div class="sc_col2_row">
-                        <div class="col2-25">
-                            <label for="mobile">Wages</label>
-                        </div>
-                        <div class="col2-75">
-                            <input type="text" id="mobile"
-                                name="mobile" placeholder="Your wages..">
-                        </div>
-                      </div>
-                    <div class="sc_col2_row">
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
+                        <table class="sc_user_table">
+                            <thead>
+                                <tr>
+                                    <th>S.N.</th>
+                                    <th>No. of Weaving</th>
+                                    <th>On Date</th>
+                                    <th>Rate</th>
+                                    <th>Sum</th>
 
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Griffin</td>
+                                    <td>100</td>
+                                    <td>1000</td>
+                                    <td>500</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Griffin</td>
+                                    <td>100</td>
+                                    <td>1000</td>
+                                    <td>500</td>
+                                </tr>
+                            </tbody>
+
+                            <tfoot>
+                                <tr>
+                                    <th id="Total" colspan="4">Total</th>
+                                    <td>2000</td>
+                                </tr>
+                            </tfoot>
+
+                        </table>
+
+                    </div>
+                </div>
             </div>
+            <!----for edit pop up-->
+            <div class="sc_form-popup" id="sc_myForm_edit">
+                <div class="sc_user_info">
+                    <button type="button" class="sc_user_closebtn" onclick="closeform('sc_myForm_edit')"><i
+              class="fas fa-times"></i></button>
+                    <div class="sc_user_content">
+                        <div class="sc_user_description">
+                            <div class="sc_edit_form">
+                                <form action="#">
+                                    <div class="sc_col2_row">
+                                        <div class="col2-25">
+                                            <label for="name">Type</label>
+                                        </div>
+                                        <div class="col2-75">
+                                            <input type="text" id="name" name="name" placeholder="type..">
+                                        </div>
+                                    </div>
+                                    <div class="sc_col2_row">
+                                        <div class="col2-25">
+                                            <label for="fname">Size</label>
+                                        </div>
+                                        <div class="col2-75">
+                                            <input type="text" id="address" name="address" placeholder="size..">
+                                        </div>
+                                    </div>
+                                    <div class="sc_col2_row">
+                                        <div class="col2-25">
+                                            <label for="phone">Piece</label>
+                                        </div>
+                                        <div class="col2-75">
+                                            <input type="text" id="phone" name="phone" placeholder="piece..">
+                                        </div>
+                                    </div>
+                                    <div class="sc_col2_row">
+                                        <div class="col2-25">
+                                            <label for="mobile">Wages</label>
+                                        </div>
+                                        <div class="col2-75">
+                                            <input type="text" id="mobile" name="mobile" placeholder="Your wages..">
+                                        </div>
+                                    </div>
+                                    <div class="sc_col2_row">
+                                        <input type="submit" value="Submit">
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <!-- edit pop up ends -->
+
         </div>
-      </div>
-      <!-- edit pop up ends -->
-
     </div>
-  </div>
-  <script src="js/tabs.js"></script>
+    <script src="js/tabs.js"></script>
 </body>
 
 </html>

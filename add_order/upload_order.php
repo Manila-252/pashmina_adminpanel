@@ -35,7 +35,7 @@
             <form action="/action_page.php">
                 <label for="myfile">Select a file:</label>
                 <input type="file" id="myfile" name="myfile"><br><br>
-                <input type="submit" class="sc_view_record_editbtn">
+                <input type="submit" class="sc_view_record_submitbtn">
             </form>
         </div>
         <div class="uo_uploaded_pdfList">
