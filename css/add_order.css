@@ -816,6 +816,19 @@ input[type=submit]:hover {
     background-color: #28a745;
 }
 
+.uo_upload_pdf input[type=submit] {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    /* margin-top: -5px; */
+    margin: 0px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    float: inherit;
+    font-size: 20px;
+}
+
 .sc_edit_form {
     border-radius: 5px;
     padding: 30px;

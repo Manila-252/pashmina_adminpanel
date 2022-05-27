@@ -26,7 +26,7 @@
     <!-- side bar start -->
     <div class="sc_sidebar_list">
         <div class="sc_sidebar">
-            <a class="active" href="wage_page.php"><i class="fas fa-rupee-sign"></i>Wages</a>
+            <a class="active" href="product_wage.php"><i class="fas fa-rupee-sign"></i>Wages</a>
             <!-- <a href="barcode scan.html"><i class="fas fa-barcode"></i>Barcode Scan</a> -->
             <a href="../add_order/upload_order.php"><i class="fas fa-plus-circle"></i>Order Status</a>
             <a href="../system/in_systemA.php"><i class="fa-solid fa-network-wired"></i>System</a>
