@@ -15,11 +15,6 @@
   </div>
 </div>
 
-<<<<<<< HEAD
-<p>
-  fghfhf
-
-=======
 <!------------------------- for per user wage default page-------------------------- ---->
 
 <div class="per_user_page_row1">
@@ -54,8 +49,8 @@
                             <td>Hari Bahadur</td>
                             <td>2000</td>
                             <td>
-                                <a href="view_inList.php">
-                                    <button class="sc_view_record_editbtn">View</button>
+                                <a href="per_user_wage2.php">
+                                  <button class="sc_view_record_editbtn">View</button>
                                 </a>
                             </td>
                         </tr>
@@ -64,8 +59,8 @@
                             <td>Ram Bahadur</td>
                             <td>5000</td>
                             <td>
-                                <a href="view_inList.php">
-                                    <button class="sc_view_record_editbtn">View</button>
+                               <a href="per_user_wage2.php">
+                                  <button class="sc_view_record_editbtn">View</button>
                                 </a>
                             </td>
                         </tr>
@@ -77,7 +72,6 @@
                 <button style="width: 50%;" disabled>Deployed to System A</button>
             </div>
         </div>
->>>>>>> 7cecf629389231893af8b7194b8689e87e719028
 
 
 <?php include 'wage_end.php'; ?>

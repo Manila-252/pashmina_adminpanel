@@ -272,8 +272,21 @@ select {
     background-color: white;
     color: #28a745;
 }
-<<<<<<< HEAD
-
+/* for add product wage */
+.sc_yarn_form_wage{
+    width:50%;
+    /* justify-content: center; */
+}
+.sc_yarn_form_wage button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: 2px solid #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    
+}
+/******per user wage css***/
 /*****per user wages css start***/
 .sc_content_container1{
     position: relative;
@@ -353,21 +366,3 @@ select {
 .per_user_wage_button3:hover {
     background-color:rgb(95, 88, 88);
 }
-    
-  
-=======
-/* for add product wage */
-.sc_yarn_form_wage{
-    width:50%;
-    /* justify-content: center; */
-}
-.sc_yarn_form_wage button {
-    padding: 10px 20px;
-    background-color: #28a745;
-    border: 2px solid #28a745;
-    color: white;
-    cursor: pointer;
-    border-radius: 15px;
-    
-}
->>>>>>> 7cecf629389231893af8b7194b8689e87e719028
