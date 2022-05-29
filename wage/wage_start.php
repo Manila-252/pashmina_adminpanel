@@ -38,5 +38,3 @@
     </div>
 
     <!-- side bar End -->
-
-    

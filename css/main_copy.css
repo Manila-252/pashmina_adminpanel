@@ -235,13 +235,12 @@ body {
 /* yarn supply received session */
 
 .sc_yarn_received_input {
-  margin-top: 20px;
-  
+    margin-top: 20px;
 }
 
 .sc_yarn_form {
-  align-items: center;
-  display: flex;
+    align-items: center;
+    display: flex;
 }
 
 .sc_yarn_form label {
@@ -273,6 +272,7 @@ select {
     background-color: white;
     color: #28a745;
 }
+<<<<<<< HEAD
 
 /*****per user wages css start***/
 .sc_content_container1{
@@ -355,3 +355,19 @@ select {
 }
     
   
+=======
+/* for add product wage */
+.sc_yarn_form_wage{
+    width:50%;
+    /* justify-content: center; */
+}
+.sc_yarn_form_wage button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: 2px solid #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    
+}
+>>>>>>> 7cecf629389231893af8b7194b8689e87e719028
