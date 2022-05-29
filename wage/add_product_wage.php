@@ -53,9 +53,14 @@
         </div>  
       </div>
       <br>
-      <button>Save</button>
+      
       
     </form>
+    <div class="for_save_button">
+      <button>Save</button>
+    </div>
+  
+    
 </div>
 
 <?php include 'wage_end.php'; ?>

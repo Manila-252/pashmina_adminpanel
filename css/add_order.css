@@ -855,8 +855,8 @@ input[type=submit]:hover {
 /* for add_product_wage css */
 .add_product_wage{
     /* background-color: #04AA6D; */
-    margin:6% 14% 20% 25%;
-    align-items: center;
+    margin:6% 14% 20% 17%;
+    
 }
 .sidebyside_display{
     display: flex;
@@ -874,4 +874,48 @@ input[type=submit]:hover {
 }
 .for_dropdown{
     width:80%;
+}
+
+.for_save_button{
+    /* background-color: #04AA6D; */
+    width:60%;
+    text-align: center;
+}
+.for_save_button button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: 2px solid #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    /* float: right; */
+}
+/* per_user_page css */
+.per_user_page_row1{
+    width:60%;
+    padding:4% 5% 1% 33%;
+    display: flex;
+}
+.sidebyside_display_user{
+    display: flex;
+    width:50%;
+    margin-top:5%;
+}
+.for_search_button{
+    width:50%;
+    /* background-color: #04AA6D; */
+    margin-top:5%;
+    margin-left:5%;
+}
+.for_search_button button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: 2px solid #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.rpo_uploaded_pdfList_user{
+    padding:0% 5% 5% 20%;
 }
