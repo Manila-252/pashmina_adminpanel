@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/fontawesome-free-6.0.0-beta3-web/css/all.css">
     <link rel="stylesheet" href="../css/main_copy.css">
     <link rel="stylesheet" href="../css/add_order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Wage</title>
 </head>
 

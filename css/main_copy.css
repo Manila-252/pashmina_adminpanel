@@ -147,8 +147,6 @@ body {
     /* width: calc(100% - 200px); */
     z-index: 6;
     left: 210px;
-    /* border: 10px solid #dddddd; */
-    /* border-style: hidden hidden solid hidden; */
 }
 
 .sc_staffs_topbar {
@@ -275,3 +273,85 @@ select {
     background-color: white;
     color: #28a745;
 }
+
+/*****per user wages css start***/
+.sc_content_container1{
+    position: relative;
+    left: 215px;
+    padding: 10px;
+    width: calc(100% - 270px);
+}
+.name_and_button{
+    display: flex;
+    /* background-color: #04AA6D; */
+}
+.back_button{
+    /* background-color: #28a745; */
+    padding: 0px 10px;
+    font-size: 30px;
+}
+.back_button a{
+    color: black;
+}
+.per_user_name{
+    /* background-color: #18a7d6; */
+    font-size: 24px;
+}
+.wage_month{
+    font-size: 24px;
+    margin: 15px 37px;
+    font-weight: bold;
+}
+.per_user_wage_table{
+    margin: 0px 40px;
+}
+.per_user_wage_btn-group{
+    margin: auto;
+    width: 18%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.per_user_wage_button1 {
+    background-color: #04AA6D; 
+    border: 1px solid #04AA6D;
+    color: white;
+    padding: 10px 24px; 
+    cursor: pointer; 
+    float: left; 
+    width: 60%;
+    border-radius: 50px 0px 0px 50px;
+}
+.per_user_wage_button2{
+    background-color: rgb(212, 66, 66); 
+    border: 1px solid rgb(212, 66, 66);
+    color: white;
+    padding: 10px 24px; 
+    cursor: pointer; 
+    float: left; 
+    border-radius: 0px 50px 50px 0px;
+}
+.per_user_wage_button3{
+    background-color: gray; 
+    border: 1px solid gray;
+    color: white;
+    padding: 10px 24px; 
+    cursor: pointer; 
+    float: left; 
+    border-radius: 0px 50px 50px 0px;
+}
+.per_user_wage_btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.per_user_wage_button2:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+.per_user_wage_button2:hover {
+    background-color:red;
+}
+.per_user_wage_button3:hover {
+    background-color:rgb(95, 88, 88);
+}
+    
+  
