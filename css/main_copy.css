@@ -237,13 +237,12 @@ body {
 /* yarn supply received session */
 
 .sc_yarn_received_input {
-  margin-top: 20px;
-  
+    margin-top: 20px;
 }
 
 .sc_yarn_form {
-  align-items: center;
-  display: flex;
+    align-items: center;
+    display: flex;
 }
 
 .sc_yarn_form label {
