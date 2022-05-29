@@ -874,3 +874,20 @@
             margin: 0px 0px 20px 0px;
             padding: 0px 3%;
         }
+        /* per_product_wage */
+        
+        .sc_user_updatewage {
+            display: flex;
+        }
+        
+        .sc_user_updatewage input {
+            height: 12px;
+            width: 20%;
+            border-radius: 5px;
+            border: 2px solid #2a435b;
+            font-size: 20px;
+            font-family: 'century gothic';
+            padding-left: 10px;
+            margin-left: 12px;
+            margin-top: 10px;
+        }

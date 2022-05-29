@@ -19,11 +19,15 @@
 <!-- edit staff start -->
 <div class="sc_content_container sc_cc_tab" id="receive_tab">
     <div class="sc_staff_details_container">
-      <a href="product_wage.php">  <button type="button" class="sc_user_backbtn" ><i class="fa-solid fa-circle-arrow-left"></i></button></a>
+        <a href="product_wage.php"> <button type="button" class="sc_user_backbtn"><i class="fa-solid fa-circle-arrow-left"></i></button></a>
         <div class="sc_user_content">
             <div class="sc_user_description">
                 <p>Type: Cashmere </p>
                 <p>Size: 110*110</p>
+                <div class="sc_user_updatewage">
+                    <p>Wage: </p>
+                    <input type="text" name="wage" placeholder="Update Wage..">
+                </div>
                 <button class="sc_user_updatebtn">Update</button>
             </div>
         </div>
