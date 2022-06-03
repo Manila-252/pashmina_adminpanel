@@ -68,9 +68,7 @@
                     </table>
                 </div>
             </div>
-            <div class="sendToA" style="padding: 20px 0px; text-align: center;">
-                <button style="width: 50%;" disabled>Deployed to System A</button>
-            </div>
+            
         </div>
 
 
