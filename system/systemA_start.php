@@ -29,7 +29,7 @@
             <a href="../wage_page.html"><i class="fas fa-rupee-sign"></i>Wages</a>
             <!-- <a href="barcode scan.html"><i class="fas fa-barcode"></i>Barcode Scan</a> -->
             <a href="../add_order/upload_order.php"><i class="fas fa-plus-circle"></i>Order Status</a>
-            <a class="active" href="in_systemA.php"><i class="fa-solid fa-network-wired"></i>System</a>
+            <a class="active" href="in_systemA.php"><i class="fa-solid fa-network-wired"></i>System hello</a>
             <a href="../storage/cloth_storage.php"><i class="fa-solid fa-box-open"></i>Storage</a>
             <a href="../yarn_supply.html"><i class="fas fa-mitten"></i>Yarn Supply</a>
             <a href="../staff_details.html"><i class="fas fa-users"></i>Staff Details</a>
