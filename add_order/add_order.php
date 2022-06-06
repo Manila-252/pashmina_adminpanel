@@ -17,11 +17,8 @@
         <a href="material.php">
             <div class="sc_staffs_status">Materials</div>
         </a>
-        <a href="add_record.php">
-            <div class="sc_tab_active sc_staffs_status">Add Record</div>
-        </a>
-        <a href="view_record.php">
-            <div class="sc_staffs_status">View Record</div>
+        <a href="add_order.php">
+            <div class="sc_tab_active sc_staffs_status">Add Order</div>
         </a>
     </div>
 </div>
@@ -45,9 +42,9 @@
             </div>
 
             <div class="sc_ar_row">
-                <div class="sc_ar_col1 sc_ar_subtitle sc_ar_flex">
-                    <div class="sc_ar_subcol3">Type</div>
-                    <div class="sc_ar_subcol4">
+                <div class="sc_ar_col3 sc_ar_subtitle sc_ar_flex">
+                    <div class="sc_ar_subcol1">Type</div>
+                    <div class="sc_ar_subcol2">
                         <select id="type" name="type">
                             <option value="a" selected>A</option>
                             <option value="b">B</option>
@@ -55,20 +52,13 @@
                             <option value="d">D</option>
                         </select>
                     </div>
-                </div>
-
-                <div class="sc_ar_col2 sc_ar_subtitle sc_ar_flex">
-                    <div class="sc_ar_subcol3_qty">Quantity</div>
-                    <div class="sc_ar_subcol4_qty">
-                        <input type="text">
-                    </div>
-                </div>
+                </div>                
             </div>
 
             <div class="sc_ar_row">
-                <div class="sc_ar_col1 sc_ar_subtitle sc_ar_flex">
-                    <div class="sc_ar_subcol3">Size</div>
-                    <div class="sc_ar_subcol4">
+                <div class="sc_ar_col3 sc_ar_subtitle sc_ar_flex">
+                    <div class="sc_ar_subcol1">Size</div>
+                    <div class="sc_ar_subcol2">
                         <select id="type" name="type">
                             <option value="a" selected>A</option>
                             <option value="b">B</option>
@@ -78,18 +68,13 @@
                     </div>
                 </div>
 
-                <div class="sc_ar_col2 sc_ar_subtitle sc_ar_flex">
-                    <div class="sc_ar_subcol3_qty">Quantity</div>
-                    <div class="sc_ar_subcol4_qty">
-                        <input type="text">
-                    </div>
-                </div>
+                
             </div>
 
             <div class="sc_ar_row">
-                <div class="sc_ar_col1 sc_ar_subtitle sc_ar_flex">
-                    <div class="sc_ar_subcol3">Color</div>
-                    <div class="sc_ar_subcol4">
+                <div class="sc_ar_col3 sc_ar_subtitle sc_ar_flex">
+                    <div class="sc_ar_subcol1">Color</div>
+                    <div class="sc_ar_subcol2">
                         <select id="type" name="type">
                             <option value="a" selected>A</option>
                             <option value="b">B</option>
@@ -99,12 +84,7 @@
                     </div>
                 </div>
 
-                <div class="sc_ar_col2 sc_ar_subtitle sc_ar_flex">
-                    <div class="sc_ar_subcol3_qty">Quantity</div>
-                    <div class="sc_ar_subcol4_qty">
-                        <input type="text">
-                    </div>
-                </div>
+                
             </div>
 
     </div>

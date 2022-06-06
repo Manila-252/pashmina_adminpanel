@@ -17,11 +17,8 @@
         <a href="material.php">
             <div class="sc_staffs_status">Materials</div>
         </a>
-        <a href="add_record.php">
-            <div class="sc_staffs_status">Add Record</div>
-        </a>
-        <a href="view_record.php">
-            <div class="sc_staffs_status">View Record</div>
+        <a href="add_order.php">
+            <div class="sc_staffs_status">Add Order</div>
         </a>
     </div>
 </div>
@@ -51,7 +48,7 @@
                                 <a href="view_inList.php">
                                     <button class="sc_view_record_editbtn">View</button>
                                 </a>
-                                <a href="list_forSystemA.php"><button class="sc_view_record_editbtn" style="width: 50%;">Make ready for System A</button></a>
+                                <a href="list_forSystemA.php"><button class="sc_view_record_editbtn" style="width: 60%;">Make ready for System A</button></a>
                             </td>
                         </tr>
                         <tr>
@@ -62,7 +59,7 @@
                                 <a href="view_inList.php">
                                     <button class="sc_view_record_editbtn">View</button>
                                 </a>
-                                <a href="list_forSystemA.php"><button class="sc_view_record_editbtn" style="width: 50%;">Make ready for System A</button></a>
+                                <a href="list_forSystemA.php"><button class="sc_view_record_editbtn" style="width: 60%;">Make ready for System A</button></a>
                             </td>
                         </tr>
                         <tr>
@@ -73,7 +70,7 @@
                                 <a href="view_inList.php">
                                     <button class="sc_view_record_editbtn">View</button>
                                 </a>
-                                <a href="list_forSystemA.php"><button class="sc_view_record_editbtn" style="width: 50%;">Make ready for System A</button></a>
+                                <a href="list_forSystemA.php"><button class="sc_view_record_editbtn" style="width: 60%;">Make ready for System A</button></a>
                             </td>
                         </tr>
                         <tr>
@@ -84,14 +81,14 @@
                                 <a href="view_inList.php">
                                     <button class="sc_view_record_editbtn">View</button>
                                 </a>
-                                <a href="list_forSystemA.php"><button class="sc_view_record_editbtn" style="width: 50%;">Make ready for System A</button></a>
+                                <a href="list_forSystemA.php"><button class="sc_view_record_editbtn" style="width: 60%;">Make ready for System A</button></a>
                             </td>
                         </tr>
                     </table>
                 </div>
             </div>
             <div class="sendToA" style="padding: 20px 0px; text-align: center;">
-                <a href="list_forSystemA.php"><button class="sc_view_record_editbtn" style="width: 50%;">Make ready for System A</button></a>
+                <a href="list_forSystemA.php"><button class="sc_view_record_editbtn" style="width: 60%;">Make ready for System A</button></a>
             </div>
         </div>
         <hr>
@@ -151,7 +148,7 @@
                 </div>
             </div>
             <div class="sendToA" style="padding: 20px 0px; text-align: center;">
-                <button style="width: 50%;" disabled>Deployed to System A</button>
+                <button style="width: 60%;" disabled>Deployed to System A</button>
             </div>
         </div>
         <hr>

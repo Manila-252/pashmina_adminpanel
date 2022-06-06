@@ -87,8 +87,10 @@
 
 .sc_ar_col1 input,
 .sc_ar_col2 input,
+.sc_ar_col3 input,
 .sc_ar_col1 select,
-.sc_ar_col2 select {
+.sc_ar_col2 select,
+.sc_ar_col3 select {
     height: 40px;
     width: 95%;
     border-radius: 5px;
@@ -122,7 +124,7 @@
 }
 
 .sc_ar_subcol2 {
-    width: 90%;
+    width: 34%;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -152,8 +154,8 @@
 }
 
 .sc_ar_submit {
-    margin: 50px;
-    text-align: center;
+    margin: 20px;
+    text-align: left;
 }
 
 .sc_ar_submit button {
@@ -706,8 +708,8 @@ td {
 
 .sc_user_info_update_systemA {
     width: 60%;
-    height: 90%;
-    margin-top: 4%;
+    height: 96%;
+    margin-top: 1%;
     background-color: rgb(223, 215, 215);
     margin-left: auto;
     margin-right: auto;
@@ -751,7 +753,7 @@ td {
 }
 
 .sc_user_description {
-    /* padding-top: 60px; */
+    padding-top: 60px;
     font-size: 20px;
     font-weight: bolder;
 }
@@ -779,9 +781,15 @@ td {
 
 /* for update */
 
-input[type=text],
-select,
-textarea {
+.for_dropdown select, .sc_user_wage_row select, .sc_user_wage_row input{
+    width: 95%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.sc_edit_form select, .sc_edit_form input{
     width: 95%;
     padding: 12px;
     border: 2px solid #ccc;
@@ -825,7 +833,6 @@ input[type=submit]:hover {
 
 .sc_edit_form {
     border-radius: 5px;
-    padding: 30px;
 }
 
 .col2-25 {
@@ -1047,11 +1054,7 @@ input[type=submit]:hover {
     margin-bottom: auto;
 }
 
-.sc_ar_subcol2 {
-    width: 90%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
+
 
 .sc_ar_subcol3 {
     width: 22%;
@@ -1077,26 +1080,6 @@ input[type=submit]:hover {
     margin-bottom: auto;
 }
 
-.sc_ar_submit {
-    margin: 50px;
-    text-align: center;
-}
-
-.sc_ar_submit button {
-    padding: 10px 60px;
-    font-size: 20px;
-    background-color: #2a435b;
-    border-radius: 20px;
-    color: white;
-    border: 2px solid #2a435b;
-    cursor: pointer;
-}
-
-.sc_ar_submit button:hover {
-    background-color: white;
-    color: #2a435b;
-    border: 2px solid #2a435b;
-}
 
 
 /* *********************************************************************************************************** */
@@ -1136,42 +1119,9 @@ td {
     padding: 5px;
 }
 
-.sc_view_record_editbtn {
-    width: 80px;
-    height: 30px;
-    background-color: #2a435b;
-    cursor: pointer;
-    padding: 5px 5px 5px 5px;
-    border-radius: 40px;
-    color: #ffffff;
-    border: 2px solid #2a435b;
-    border-radius: 15px;
-    font-weight: 20;
-}
 
-.sc_view_record_editbtn:hover {
-    background-color: white;
-    border: 2px solid #2a435b;
-    color: #2a435b;
-}
 
-.sc_view_record_deletebtn {
-    width: 80px;
-    height: 30px;
-    background-color: red;
-    cursor: pointer;
-    padding: 5px 5px 5px 10px;
-    border-radius: 40px;
-    color: #ffffff;
-    border: 2px solid red;
-    border-radius: 15px;
-}
 
-.sc_view_record_deletebtn:hover {
-    background-color: white;
-    color: red;
-    border: 2px solid red;
-}
 
 .sc_viewrecord_row {
     display: flex;
@@ -1628,27 +1578,7 @@ td {
 }
 
 
-/* for update */
 
-.sc_user_info_update_systemA {
-    width: 60%;
-    height: 90%;
-    margin-top: 4%;
-    background-color: rgb(223, 215, 215);
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 2%;
-}
-
-.sc_user_info_update_systemB {
-    width: 60%;
-    height: 85%;
-    margin-top: 4%;
-    background-color: rgb(223, 215, 215);
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 2%;
-}
 
 
 /* for update box in instore part */
@@ -1678,7 +1608,7 @@ td {
 
 .sc_user_content {
     width: 80%;
-    margin: 25px;
+    margin: auto;
 }
 
 .sc_user_closebtn {
@@ -1704,15 +1634,6 @@ td {
 
 /* for update */
 
-input[type=text],
-select,
-textarea {
-    width: 95%;
-    padding: 12px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
 
 label {
     padding: 12px 12px 22px 0;
@@ -1748,10 +1669,7 @@ input[type=submit]:hover {
     font-size: 20px;
 }
 
-.sc_edit_form {
-    border-radius: 5px;
-    padding: 30px;
-}
+
 
 .col2-25 {
     float: left;
@@ -1861,4 +1779,5 @@ td {
     cursor: pointer;
     border-radius: 15px;
     font-weight: 20;
+    margin: 20px 0px;
 }

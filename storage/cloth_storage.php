@@ -14,6 +14,12 @@
     <a href="perProduct.php">
       <div class="sc_staffs_status">Per Product Detail</div>
     </a>
+    <a href="add_record.php">
+      <div class="sc_staffs_status">Add Record</div>
+    </a>
+    <a href="view_record.php">
+      <div class="sc_staffs_status">View Record</div>
+    </a>
 
   </div>
 </div>

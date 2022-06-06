@@ -248,7 +248,7 @@ body {
 }
 
 .sc_yarn_form input,
-select {
+.sc_yarn_form select {
     vertical-align: middle;
     margin: 0px 40px 0px 15px;
     padding: 10px;
@@ -402,4 +402,5 @@ select {
 
 .sc_user_wage_right {
     width: 80%;
+    margin: auto;
 }

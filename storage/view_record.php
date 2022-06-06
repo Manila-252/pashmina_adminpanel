@@ -1,4 +1,4 @@
-<?php include 'add_order_start.php'; ?>
+<?php include 'storage_start.php'; ?>
 
 <!-- staff details topbar start -->
 
@@ -17,8 +17,8 @@
         <a href="material.php">
             <div class="sc_staffs_status">Materials</div>
         </a>
-        <a href="add_record.php">
-            <div class="sc_staffs_status">Add Record</div>
+        <a href="add_order.php">
+            <div class="sc_staffs_status">Add Order</div>
         </a>
         <a href="view_record.php">
             <div class="sc_tab_active sc_staffs_status">View Record</div>
@@ -161,4 +161,4 @@
 <!--  view record edit popup ends -->
 
 
-<?php include 'add_order_end.php'; ?>
+<?php include 'storage_end.php'; ?>

@@ -17,11 +17,8 @@
         <a href="material.php">
             <div class="sc_tab_active sc_staffs_status">Materials</div>
         </a>
-        <a href="add_record.php">
-            <div class="sc_staffs_status">Add Record</div>
-        </a>
-        <a href="view_record.php">
-            <div class="sc_staffs_status">View Record</div>
+        <a href="add_order.php">
+            <div class="sc_staffs_status">Add Order</div>
         </a>
     </div>
 </div>

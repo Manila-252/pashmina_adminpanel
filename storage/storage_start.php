@@ -16,7 +16,7 @@
     <div class="sc_navbar">
         <div class="sc_header">
             <div class="sc_header_right">
-                <a href="#home" class="admin_hello">Hello Admin</a>
+                
                 <a href="#" class="logout_btn"><i class="fa-solid fa-power-off"></i></a>
             </div>
         </div>
