@@ -851,7 +851,7 @@ input[type=submit]:hover {
 
 .add_product_wage {
     /* background-color: #04AA6D; */
-    margin: 6% 14% 20% 17%;
+    margin: 6% 14% 18% 3%;
 }
 
 .sidebyside_display {
@@ -893,7 +893,7 @@ input[type=submit]:hover {
 
 .per_user_page_row1 {
     width: 60%;
-    padding: 4% 5% 1% 33%;
+    padding: 0% 5% 1% 33%;
     display: flex;
 }
 

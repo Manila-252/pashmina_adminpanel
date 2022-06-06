@@ -15,43 +15,44 @@
   </div>
 </div>
 
-<div class="add_product_wage">
-  <form class="sc_yarn_form_wage" action="">
-      <div class="sidebyside_display">
-        <div class="for_label"><label for="year">Type</label></div>
-        <div class="for_dropdown">
-          <select id="year" name="year">
-            <option value="2022">Pashmina</option>
-            <option value="2021">Cashmere</option>
-            <option value="2020">..</option>
+<div class="sc_content_container sc_cc_tab">
+  <div class="add_product_wage">
+    <form class="sc_yarn_form_wage" action="">
+        <div class="sidebyside_display">
+          <div class="for_label"><label for="year">Type</label></div>
+          <div class="for_dropdown">
+            <select id="year" name="year">
+              <option value="2022">Pashmina</option>
+              <option value="2021">Cashmere</option>
+              <option value="2020">..</option>
             
-          </select>
-        </div>  
-      </div>
+            </select>
+          </div>  
+        </div>
         
-      <div class="sidebyside_display">
-        <div class="for_label"><label for="year">Size</label></div>
-        <div class="for_dropdown">
-          <select id="year" name="year">
-            <option value="2022">220*220</option>
-            <option value="2021">220*220</option>
-            <option value="2020">220*220</option>
-            <option value="2019">...</option>
-          </select>
-        </div>  
-      </div>
+        <div class="sidebyside_display">
+          <div class="for_label"><label for="year">Size</label></div>
+          <div class="for_dropdown">
+            <select id="year" name="year">
+              <option value="2022">220*220</option>
+              <option value="2021">220*220</option>
+              <option value="2020">220*220</option>
+              <option value="2019">...</option>
+            </select>
+          </div>  
+        </div>
 
-      <div class="sidebyside_display">
-        <div class="for_label"><label for="year">Wage</label></div>
-        <div class="for_dropdown">
-          <select id="year" name="year">
-            <option value="2022">20000</option>
-            <option value="2021">30000</option>
-            <option value="2020">40000</option>
-            <option value="2019">...</option>
-          </select>
-        </div>  
-      </div>
+        <div class="sidebyside_display">
+          <div class="for_label"><label for="year">Wage</label></div>
+          <div class="for_dropdown">
+            <select id="year" name="year">
+              <option value="2022">20000</option>
+              <option value="2021">30000</option>
+              <option value="2020">40000</option>
+              <option value="2019">...</option>
+            </select>
+          </div>  
+        </div>
       <br>
       
       
@@ -62,5 +63,5 @@
   
     
 </div>
-
+</div>
 <?php include 'wage_end.php'; ?>
