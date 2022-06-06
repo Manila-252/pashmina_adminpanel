@@ -389,3 +389,17 @@ select {
 .per_user_wage_button3:hover {
     background-color: rgb(95, 88, 88);
 }
+
+.sc_user_wage_row {
+    height: auto;
+    display: flex;
+    width: 60%;
+}
+
+.sc_user_wage_left {
+    width: 20%;
+}
+
+.sc_user_wage_right {
+    width: 80%;
+}

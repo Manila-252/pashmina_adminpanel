@@ -750,14 +750,8 @@ td {
     border-radius: 2%;
 }
 
-.sc_user_content {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .sc_user_description {
-    padding-top: 60px;
+    /* padding-top: 60px; */
     font-size: 20px;
     font-weight: bolder;
 }
@@ -1684,14 +1678,7 @@ td {
 
 .sc_user_content {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.sc_user_description {
-    padding-top: 60px;
-    font-size: 20px;
-    font-weight: bolder;
+    margin: 25px;
 }
 
 .sc_user_closebtn {
@@ -1836,7 +1823,7 @@ td {
     color: white;
     cursor: pointer;
     border-radius: 15px;
-    /* float: right; */
+    float: right;
     font-weight: 20;
 }
 
@@ -1864,4 +1851,14 @@ td {
     padding-left: 10px;
     margin-left: 12px;
     margin-top: 10px;
+}
+
+.sc_user_wage_updatebtn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: 2px solid #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: 20;
 }

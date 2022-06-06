@@ -19,16 +19,34 @@
 <!-- edit staff start -->
 <div class="sc_content_container sc_cc_tab" id="receive_tab">
     <div class="sc_staff_details_container">
-        <a href="product_wage.php"> <button type="button" class="sc_user_backbtn"><i class="fa-solid fa-circle-arrow-left"></i></button></a>
+        <a href="product_wage.php"> <i class="fa fa-arrow-left" aria-hidden="true" style="font-size: 26px;"></i></a>
         <div class="sc_user_content">
             <div class="sc_user_description">
-                <p>Type: Cashmere </p>
-                <p>Size: 110*110</p>
-                <div class="sc_user_updatewage">
-                    <p>Wage: </p>
-                    <input type="text" name="wage" placeholder="Update Wage..">
+                <div class="sc_user_wage_row">
+                    <div class="sc_user_wage_left">
+                        <p>Type:</p>
+                    </div>
+                    <div class="sc_user_wage_right">
+                        <p>Cashmere</p>
+                    </div>
                 </div>
-                <button class="sc_user_updatebtn">Update</button>
+                <div class="sc_user_wage_row">
+                    <div class="sc_user_wage_left">
+                        <p>Size:</p>
+                    </div>
+                    <div class="sc_user_wage_right">
+                        <p>110*110</p>
+                    </div>
+                </div>
+                <div class="sc_user_wage_row">
+                    <div class="sc_user_wage_left">
+                        <p>Wage:</p>
+                    </div>
+                    <div class="sc_user_wage_right">
+                        <input type="text" name="update_wage" id="wage">
+                    </div>
+                </div>
+                <button class="sc_user_wage_updatebtn">Update</button>
             </div>
         </div>
     </div>
